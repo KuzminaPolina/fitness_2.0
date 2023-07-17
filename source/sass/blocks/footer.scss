@@ -1,0 +1,122 @@
+.footer {
+  width: 100%;
+  background-color: $color-background-black-russian;
+}
+
+.footer__nav {
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 44px 0 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+
+  @media (max-width: $vp-768) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.footer__columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__list {
+  color: $color-default-white;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 0 0;
+  padding: 0;
+
+  @media (max-width: $vp-768) {
+    display: block;
+    column-count: 2;
+    column-gap: 70px;
+    margin-bottom: 10px;
+  }
+}
+
+.footer__logo {
+  color: $color-default-white;
+  height: fit-content;
+  margin-right: auto;
+
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.72px;
+
+  @media (max-width: $vp-1366) {
+    font-size: 24px;
+    line-height: normal;
+    font-weight: 700;
+    letter-spacing: 0.48px;
+  }
+
+  @media (max-width: $vp-768) {
+    position: absolute;
+    top: 45px;
+    left: 0;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+  }
+}
+
+.footer__link {
+  color: $color-default-white;
+  font-family: $ff-secondary;
+  font-size: 14px;
+  line-height: normal;
+  font-weight: 400;
+
+  @media (max-width: $vp-768) {
+    font-size: 16px;
+  }
+}
+
+.footer__item {
+  @media (max-width: $vp-768) {
+    margin-bottom: 30px;
+  }
+}
+
+.footer__item:first-child {
+  @media (max-width: $vp-768) {
+    margin-top: 55px;
+  }
+}
+
+.footer__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.footer__social-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__social-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__social-item:not(:last-child) {
+  margin-right: 11px;
+}
+
+.footer__social-link {
+  padding: 0;
+  margin: 0;
+  height: 25px;
+}

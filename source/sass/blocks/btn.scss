@@ -4,14 +4,14 @@
 
   color: $color-default-white;
 
-  background-color: $color-neon-blue;
+  background-color: $gradient-button-torch-red-to-cobalt;
   border: none;
   cursor: pointer;
 
   transition: opacity $trans-default;
 
   &--red {
-    background-color: $color-torch-red;
+    background-color: $color-background-torch-red;
   }
 
   &:disabled {
