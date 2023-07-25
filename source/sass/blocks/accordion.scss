@@ -1,0 +1,140 @@
+.accordion {
+  //max-width: 500px;
+  margin: 0 auto 0 auto;
+
+  & & {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  &__button {
+    width: 100%;
+    height: 42px;
+    font-family: $ff-secondary;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 120%;
+    color: $color-default-blue;
+    text-align: start;
+    background: none;
+    border: none;
+    padding: 0;
+    position: relative;
+    cursor: pointer;
+
+    @include vp-1366 {
+      height: 58px;
+    }
+  }
+
+  &__element {
+    padding-top: 25px;
+    margin-bottom: 20px;
+    border-top: solid 1px rgba(28, 51, 116, 0.2);
+
+    @include vp-1366 {
+      padding-top: 15px;
+    }
+  }
+
+  &__element:last-child {
+    padding-bottom: 25px;
+    border-bottom: solid 1px rgba(28, 51, 116, 0.2);
+    margin-bottom: 0;
+  }
+
+  &__element.is-active > &__button > &__button-icon {
+    background-color: $color-default-blue;
+  }
+
+  &__element.is-active > &__button > &__button-icon::before {
+    background-color: $color-default-blue;
+  }
+
+  &__element.is-active > &__button > &__button-icon::after {
+    background-color: $color-default-white;
+  }
+
+  &__wrapper {
+    padding: 10px 0;
+    max-width: 660px;
+
+    @include vp-1366 {
+      padding: 0;
+    }
+  }
+
+  &__wrapper p {
+    font-family: $ff-secondary;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 140%;
+    font-style: normal;
+
+    @include vp-1366 {
+      max-width: 560px;
+    }
+
+    @include vp-768 {
+      font-size: 16px;
+    }
+  }
+}
+
+.accordion__button-icon {
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: solid 1px $color-default-blue;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: auto;
+
+  @include vp-1366 {
+    top: 15%;
+  }
+}
+
+.accordion__button-icon::before,
+.accordion__button-icon::after {
+  position: absolute;
+  top: 20px;
+  left: 12px;
+  width: 18px;
+  height: 1px;
+  background-color: $color-default-blue;
+  content: "";
+}
+
+.accordion__button-icon::before {
+  transform: rotate(90deg);
+}
+
+.accordion__button-icon:hover {
+  background-color: $color-default-blue;
+}
+
+.accordion__button-icon:hover::before,
+.accordion__button-icon:hover::after {
+  background-color: $color-default-white;
+}
+
+.accordion__button-text {
+  display: inline-block;
+  font-family: $ff-secondary;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 120%;
+  color: $color-default-blue;
+
+  @include vp-1366 {
+    max-width: 537px;
+  }
+
+  @include vp-768 {
+    font-size: 18px;
+    max-width: 215px;
+  }
+}

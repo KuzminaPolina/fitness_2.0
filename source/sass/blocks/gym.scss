@@ -14,28 +14,33 @@
   }
 
   @include vp-768 {
-    padding: 70px 0px 70px;
+    padding: 70px 0 70px;
   }
 }
 
 .gym__main-content {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  padding-left: 60px;
 
   @media (max-width: $vp-1366) {
     flex-direction: column;
+    align-items: center;
+    padding-left: 0;
   }
 }
 
 .gym__description {
   max-width: 355px;
+  padding-top: 40px;
 
   @media (max-width: $vp-1366) {
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 502px;
+    padding-top: 0;
   }
 
   @media (max-width: $vp-768) {
@@ -51,11 +56,12 @@
   line-height: normal;
   margin: 0;
   padding: 0;
-  margin-bottom: 25px;
+  margin-bottom: 8px;
 
   @media (max-width: $vp-1366) {
     font-size: 42px;
     letter-spacing: 1.26px;
+    margin-bottom: 0;
   }
 
   @media (max-width: $vp-768) {
@@ -71,10 +77,10 @@
   line-height: 27px;
   margin: 0;
   padding: 0;
-  margin-bottom: 55px;
+  margin-bottom: 38px;
 
   @media (max-width: $vp-1366) {
-    margin-bottom: 50px;
+    margin-bottom: 32px;
   }
 }
 
@@ -108,7 +114,7 @@
   margin-bottom: 10px;
 
   @media (max-width: $vp-1366) {
-    margin-bottom: 50px;
+    margin-bottom: 45px;
   }
 }
 
@@ -116,12 +122,21 @@
   max-width: 660px;
 
   @media (max-width: $vp-1366) {
-    width: 880px;
+    width: 678px;
+    height: 345px;
   }
 
   @media (max-width: $vp-768) {
     width: 100%;
     margin-bottom: 40px;
+  }
+}
+
+.gym__image picture img {
+  @media (max-width: $vp-1366) {
+    width: 678px;
+    height: 345px;
+    object-fit: cover;
   }
 }
 

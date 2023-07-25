@@ -1,0 +1,240 @@
+.catalog__tabs {
+  width: 1366px;
+
+  @include vp-1366 {
+    max-width: 100%;
+  }
+}
+
+.tabs__controls {
+  display: flex;
+  justify-content: space-between;
+  max-width: 350px;
+  margin: 0 auto;
+  width: 100%;
+  margin-bottom: 40px;
+  background: none;
+  border: none;
+  border-bottom: solid 2px rgba(120, 120, 120, 0.2);
+
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+  }
+}
+
+.tabs__control {
+  font-family: $ff-secondary;
+  font-size: 20px;
+  line-height: 30px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  opacity: 0.5;
+  color: $color-default-blue;
+  padding-bottom: 11px;
+
+  @include vp-1366 {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  @include vp-768 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &.is-active {
+    opacity: 1;
+    pointer-events: none;
+    padding-bottom: 11px;
+    border-bottom: solid 2px $color-venetian-red;
+    margin-bottom: -2px;
+  }
+}
+
+.tabs__control:not(:last-child) {
+  margin-right: 46px;
+}
+
+.tabs__content {
+  margin-bottom: 0;
+  transition: height 0.3s;
+}
+
+.tabs__element {
+  width: 100%;
+  background: $color-transparent;
+}
+
+.tabs--unset .tabs__content {
+  height: 100px;
+}
+
+.tabs--unset .tabs__element {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.tabs__cards {
+  display: flex;
+  max-width: 1160px;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: space-between;
+
+  @include vp-1366 {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.tabs__card {
+  background-color: $color-default-white;
+  width: 360px;
+  padding: 7px;
+
+  @include vp-1366 {
+    width: 442px;
+  }
+
+  @include vp-768 {
+    width: 290px;
+  }
+}
+
+.tabs__card:hover,
+.tabs__card:focus-visible {
+  outline: none;
+  background: $gradient-text-crimson-red-to-cobalt;
+}
+
+.tabs__card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 55px 70px 62px;
+  background-color: $color-default-white;
+
+  @include vp-1366 {
+    width: 100%;
+    max-width: 442px;
+  }
+
+  @include vp-768 {
+    padding: 40px;
+  }
+}
+
+.tabs__card:not(:last-child) {
+  margin: 0;
+
+  @include vp-1366 {
+    margin-bottom: 40px;
+  }
+}
+
+.tabs__header {
+  font-family: $ff-secondary;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 110%;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+
+  @include vp-1366 {
+    line-height: 152%;
+    margin-bottom: 7px;
+  }
+
+  @include vp-768 {
+    font-size: 22px;
+    line-height: 110%;
+  }
+}
+
+.tabs__tagline {
+  margin: 0;
+  padding: 0;
+  font-family: $ff-secondary;
+  font-size: 16px;
+  line-height: 150%;
+  margin-bottom: 73px;
+
+  @include vp-768 {
+    margin-bottom: 50px;
+  }
+}
+
+.tabs__price-shadow {
+  margin: 0;
+  padding: 0;
+  font-family: $ff-secondary;
+  font-size: 100px;
+  font-weight: 700;
+  color: $color-whisper-gray;
+
+  @include vp-768 {
+    font-size: 80px;
+    line-height: 120px;
+  }
+}
+
+.tabs__price {
+  margin: 0;
+  padding: 0;
+  color: $color-egyptian-blue;
+  font-family: $ff-secondary;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 90px;
+  margin-top: -33px;
+  margin-bottom: 35px;
+
+
+  @include vp-1366 {
+    margin-bottom: 35px;
+  }
+
+  @include vp-768 {
+    margin-top: -85px;
+    font-size: 48px;
+  }
+}
+
+.tabs__rub {
+  font-family: $ff-rouble;
+  color: $color-sapphire-blue;
+}
+
+.tabs__button {
+  background: none;
+  font-family: $ff-secondary;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  font-weight: 700;
+  line-height: normal;
+  padding: 24px 43px;
+  outline: solid 2px $color-default-blue;
+  border: none;
+  cursor: pointer;
+
+  @include vp-768 {
+    padding: 24px;
+  }
+}
+
+.tabs__button:hover,
+.tabs__button:focus-visible {
+  background: $gradient-button-torch-red-to-cobalt;
+  border: none;
+  outline: none;
+  color: $color-default-white;
+  cursor: pointer;
+}

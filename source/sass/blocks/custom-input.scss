@@ -1,13 +1,14 @@
 .custom-input,
 .custom-textarea {
   position: relative;
-
   display: flex;
-  width: 530px;
-  padding: 14px 0 28px;
+  width: 190px;
+
+  @include vp-1366 {
+    width: 206px;
+  }
 
   @media screen and (max-width: 767px) {
-    padding: 4px 0 48px;
     width: 100%;
   }
 
@@ -24,13 +25,16 @@
     input,
     textarea {
       flex-grow: 1;
-      max-width: 300px;
-      min-height: 48px;
-      margin-left: auto;
-      padding: 10px;
-
-      border: 2px solid rgba(#000000, 0.2);
-      border-radius: 5px;
+      padding: 10px 0;
+      border: none;
+      background-color: $color-default-blue;
+      font-family: $ff-secondary;
+      border-bottom: solid 1px rgba(255, 255, 255, 0.5);
+      color: $color-default-white;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
       outline: none;
 
       transition: border 0.3s ease;
@@ -40,12 +44,36 @@
         width: 100%;
       }
 
+      &:active {
+        border: solid 1px $color-default-white;
+        padding: 10px 15px;
+      }
+
       &:hover {
-        border: 2px solid rgba(#000000, 0.5);
+        border-bottom: solid 1px $color-default-white;
       }
 
       &:focus {
-        border: 2px solid rgba(#000000, 0.8);
+        border: solid 1px $color-default-white;
+        padding: 10px 15px;
+      }
+
+      &::placeholder {
+        font-family: $ff-secondary;
+        color: $color-default-white;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+
+      &:disabled {
+        color: rgba(255, 255, 255, 0.5);
+        border-bottom: solid 1px rgba(255, 255, 255, 0.4);
+      }
+
+      &:disabled::placeholder {
+        opacity: 0.4;
       }
     }
   }
@@ -61,7 +89,7 @@
     right: 0;
     bottom: 35px;
 
-    color: #ff1553;
+    color: $color-error;
 
     opacity: 0;
 
@@ -75,33 +103,37 @@
   &.is-invalid {
     input,
     textarea {
-      border: 2px solid #ff1553;
+      border: 1px solid $color-error;
 
       &:focus,
       &:hover {
-        border: 2px solid rgba(#ff1553, 0.5);
+        border: 1px solid $color-error;
       }
     }
   }
 
   &.is-valid {
     input {
-      border: 2px solid #22b259;
+      border: 1px solid #22b259;
 
       &:focus,
       &:hover {
-        border: 2px solid rgba(#22b259, 0.5);
+        border: 1px solid rgba(#22b259, 0.5);
       }
     }
   }
 
   .input-message {
+    font-family: $ff-secondary;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
     position: absolute;
     right: 0;
-    bottom: -5px;
+    bottom: -25px;
 
     &.is-invalid {
-      color: #ff0000;
+      color: $color-error;
     }
 
     &.is-valid {

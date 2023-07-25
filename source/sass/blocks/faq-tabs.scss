@@ -1,0 +1,150 @@
+.faq {
+  background-color: $color-background-ghost-white;
+}
+
+.faq__container {
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 120px 103px 68px;
+
+  @include vp-1366 {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 110px 45px 30px;
+  }
+
+  @include vp-768 {
+    margin: 0 auto;
+    padding: 70px 15px;
+  }
+}
+
+.faq__header {
+  margin: 0;
+  font-size: 54px;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 1.62px;
+  line-height: normal;
+  margin-bottom: 40px;
+
+  @include vp-1366 {
+    font-size: 42px;
+    letter-spacing: 1.26px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  @include vp-768 {
+    font-size: 32px;
+    letter-spacing: 0.96px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+}
+
+.faq__tabs {
+  display: flex;
+
+  @include vp-1366 {
+    flex-direction: column;
+  }
+}
+
+.faq__tabs-controls {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-right: 40px;
+  max-height: 250px;
+
+  @media screen and (max-width: 1365px) {
+    flex-direction: row;
+    margin: 0;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (max-width: 767px) {
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+}
+
+.faq__tabs-control {
+  cursor: pointer;
+  justify-content: center;
+  width: 100%;
+  min-width: 260px;
+  padding: 17px 80px;
+  font-family: $ff-secondary;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 18px;
+  margin-bottom: 10px;
+  background: none;
+  color: $color-default-blue;
+  border: 1px solid rgba(16, 38, 84, 0.2);
+
+  @media screen and (max-width: 1365px) {
+    padding: 17px 15px;
+    box-sizing: border-box;
+    min-width: 160px;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 14px 0;
+    font-size: 16px;
+    min-width: 140px;
+    width: 140px;
+    height: 44px;
+  }
+
+  &.is-active {
+    opacity: 1;
+    pointer-events: none;
+    background: $gradient-button-torch-red-to-cobalt;
+    color: $color-default-white;
+  }
+}
+
+.faq__tabs-content {
+  margin-bottom: 40px;
+  width: 100%;
+
+  transition: height 0.3s;
+}
+
+.faq__tabs-content:last-child {
+  margin-bottom: 0;
+}
+
+.faq__tabs-element {
+  width: 100%;
+
+  @media screen and (max-width: 767px) {
+    padding: 15px;
+  }
+
+  p {
+    margin: 0;
+
+    &:not(:last-child) {
+      margin: 0 0 20px 0;
+    }
+  }
+}
+
+.tabs--unset .tabs__content {
+  height: 100px;
+}
+
+.tabs--unset .tabs__element {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}

@@ -3,7 +3,7 @@
 
 @import "vendor/normalize";
 // Swiper 7.4.1
-// @import "vendor/swiper";
+@import "vendor/swiper";
 
 // Global
 // ---------------------------------
@@ -17,8 +17,6 @@
 
 // Blocks
 // ---------------------------------
-
-@import "blocks/btn";
 @import "blocks/custom-input";
 @import "blocks/custom-toggle";
 @import "blocks/custom-select";
@@ -26,7 +24,21 @@
 @import "blocks/hero";
 @import "blocks/gym";
 @import "blocks/video";
+@import "blocks/catalog";
+@import "blocks/tabs";
+@import "blocks/data-tabs.scss";
+@import "blocks/supergames";
+@import "blocks/advantages";
+@import "blocks/trainers";
+@import "blocks/promo";
+@import "blocks/faq-tabs.scss";
+@import "blocks/faq-data-tabs.scss";
+@import "blocks/accordion";
+@import "blocks/data-accordion";
+@import "blocks/feedback";
+@import "blocks/info";
 @import "blocks/footer";
+
 
 // ---------------------------------
 

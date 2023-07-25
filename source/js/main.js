@@ -1,33 +1,59 @@
 import {iosVhFix} from './utils/ios-vh-fix';
-import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
+import './modules/video';
+import './modules/tabs/tabs';
+import './modules/accordeon/accordions';
+import {initTabs} from './modules/tabs/init-tabs';
+import {initAccordions} from './modules/accordeon/init-accordion';
 
-const overlay = document.querySelector('.video__overlay');
-const video = document.querySelector('.video__iframe');
-const playButton = document.querySelector('.video__button');
-
-const playVideo = () => {
-  const onPressPlay = () => {
-    if (
-      overlay.classList.contains('video__overlay--open') &&
-      video.classList.contains('video__iframe--hidden')
-    ) {
-      video.src = 'https://www.youtube.com/embed/9TZXsZItgdw?&autoplay=1';
-      overlay.classList.remove('video__overlay--open');
-      overlay.classList.add('video__overlay--hidden');
-      video.classList.remove('video__iframe--hidden');
-      video.classList.add('video__iframe--open');
-    }
-  };
-  playButton.addEventListener('click', onPressPlay);
+// ---------------------------------
+const activateTrainersSlider = function activatetrainersSlider() {
+  const trainersSlider = new Swiper('.trainers__content', {
+    direction: 'horizontal',
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+      },
+      768: {
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+        spaceBetween: 30,
+      },
+      1366: {
+        slidesPerView: 4,
+        slidesPerGroup: 4,
+      },
+    },
+  });
 };
 
-playVideo();
+// ---------------------------------
+const activateFeedbackSlider = function activateFeedbackSlider() {
+  const feedbackSlider = new Swiper('.feedback__content', {
+    direction: 'horizontal',
+    loop: false,
+    navigation: {
+      nextEl: '.feedback__button--next',
+      prevEl: '.feedback__button--prev',
+    },
+    slidesPerView: 1,
+  });
+};
 
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
   // Utils
+  activateFeedbackSlider();
+  activateTrainersSlider();
+  initAccordions();
+  initTabs();
   // ---------------------------------
 
   iosVhFix();
@@ -38,7 +64,6 @@ window.addEventListener('DOMContentLoaded', () => {
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
-    initModals();
     const form = new Form();
     window.form = form;
     form.init();

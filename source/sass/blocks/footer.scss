@@ -6,11 +6,15 @@
 .footer__nav {
   max-width: 1366px;
   margin: 0 auto;
-  padding: 44px 0 32px;
+  padding: 44px 103px 35px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   position: relative;
+
+  @media (max-width: $vp-1366) {
+    padding: 44px 0 44px;
+  }
 
   @media (max-width: $vp-768) {
     flex-direction: column;
@@ -29,8 +33,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 10px;
   margin: 0 auto 0 0;
   padding: 0;
+
+  @media (max-width: $vp-1366) {
+    gap: 0;
+  }
 
   @media (max-width: $vp-768) {
     display: block;
@@ -43,19 +52,19 @@
 .footer__logo {
   color: $color-default-white;
   height: fit-content;
-  margin-right: auto;
-
-  font-size: 36px;
+  margin-right: 278px;
+  font-size: 26px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  letter-spacing: 0.72px;
+  letter-spacing: 0.52px;
 
   @media (max-width: $vp-1366) {
     font-size: 24px;
     line-height: normal;
     font-weight: 700;
     letter-spacing: 0.48px;
+    margin-right: 60px;
   }
 
   @media (max-width: $vp-768) {

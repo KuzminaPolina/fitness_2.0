@@ -1,6 +1,6 @@
 export class Message {
   constructor() {
-    this._baseErrorText = 'Это поле является обязательным';
+    this._baseErrorText = 'Заполните телефон';
   }
 
   _messageTemplate(message, state) {

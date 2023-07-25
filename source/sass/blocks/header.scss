@@ -1,6 +1,7 @@
 .header {
   width: 100%;
   background: $gradient-background-conic;
+  margin: 0 auto;
 }
 
 .header__container {
@@ -20,10 +21,14 @@
 .header__nav {
   max-width: 1366px;
   margin: 0 auto;
-  padding: 30px 0;
+  padding: 30px 103px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+
+  @include vp-1366 {
+    padding: 35px 0 18px;
+  }
 }
 
 .header__logo {
@@ -58,6 +63,9 @@
   color: $color-default-white;
   font-size: 26px;
   font-weight: 600;
+  line-height: normal;
+  font-style: normal;
+  letter-spacing: 0.78px;
 
   @media (max-width: $vp-1366) {
     font-size: 24px;
