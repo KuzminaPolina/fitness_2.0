@@ -62,7 +62,6 @@
       type="font/woff2"
       crossorigin
     >
-    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <link
       rel="icon"
@@ -111,30 +110,33 @@
                 </ul>
                 <h1 class="hero__name">Фитнес центр</h1>
               </div>
-              <button class="hero__button">Купить абонемент</button>
+              <a href="#" class="hero__button">Купить абонемент</a>
             </div>
             <div class="hero__column-image">
               <picture>
                 <source
-                media="(max-width: 1199px)"
-                srcset="
-                  ./img/tablet/hero-img@x1.webp 1x,
-                  ./img/tablet/hero-img@x2.webp 2x
-                "
-              >
+                  type="image/webp"
+                  media="(max-width: 1199px)"
+                  srcset="
+                    ./img/tablet/hero-img@x1.webp 1x,
+                    ./img/tablet/hero-img@x2.webp 2x
+                  "
+                >
                 <source
-                srcset="
-                  ./img/desktop/hero-img@x1.webp 1x,
-                  ./img/desktop/hero-img@x2.webp 2x
-                "
-              >
-              <source
-                media="(max-width: 1199px)"
-                srcset="
-                  ./img/tablet/hero-img@x1.jpg 1x,
-                  ./img/tablet/hero-img@x2.jpg 2x
-                "
-              >
+                  type="image/webp"
+                  srcset="
+                    ./img/desktop/hero-img@x1.webp 1x,
+                    ./img/desktop/hero-img@x2.webp 2x
+                  "
+                >
+                <source
+                  type="image/jpg"
+                  media="(max-width: 1199px)"
+                  srcset="
+                    ./img/tablet/hero-img@x1.jpg 1x,
+                    ./img/tablet/hero-img@x2.jpg 2x
+                  "
+                >
                 <img
                   src="./img/desktop/hero-img@x1.jpg"
                   srcset="./img/desktop/hero-img@x2.jpg 2x"
@@ -202,6 +204,7 @@
                       <iframe class="video__iframe video__iframe--hidden" src="https://www.youtube.com/embed/9TZXsZItgdw?&autoplay=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                       <picture>
                         <source
+                          type="image/webp"
                           media="(max-width: 767px)"
                           srcset="
                             ./img/mobile/gym-video@x1.webp 1x,
@@ -209,6 +212,7 @@
                           "
                         >
                         <source
+                          type="image/webp"
                           media="(max-width: 1199px)"
                           srcset="
                             ./img/tablet/gym-video@x1.webp 1x,
@@ -216,6 +220,7 @@
                           "
                         >
                         <source
+                          type="image/webp"
                           srcset="
                             ./img/desktop/gym-video@x1.webp 1x,
                             ./img/desktop/gym-video@x2.webp 2x
@@ -272,7 +277,7 @@
                         <p class="tabs__tagline">12 занятий</p>
                         <p class="tabs__price-shadow">5000</p>
                         <p class="tabs__price">5000 <span class="tabs__rub">₽</span></p>
-                        <button class="tabs__button" type="button">Купить абонемент</button>
+                        <a href="#" class="tabs__button" type="button">Купить абонемент</a>
                       </div>
                     </div>
                     <div class="tabs__card" tabindex="0">
@@ -281,7 +286,7 @@
                         <p class="tabs__tagline">с 8:00 до 17:00</p>
                         <p class="tabs__price-shadow">1700</p>
                         <p class="tabs__price">1700 <span class="tabs__rub">₽</span></p>
-                        <button class="tabs__button" type="button">Купить абонемент</button>
+                        <a href="#" class="tabs__button" type="button">Купить абонемент</a>
                       </div>
                     </div>
                     <div class="tabs__card" tabindex="0">
@@ -290,7 +295,7 @@
                         <p class="tabs__tagline">с 8:00 до 22:00</p>
                         <p class="tabs__price-shadow">2700</p>
                         <p class="tabs__price">2700 <span class="tabs__rub">₽</span></p>
-                        <button class="tabs__button" type="button">Купить абонемент</button>
+                        <a href="#" class="tabs__button" type="button">Купить абонемент</a>
                       </div>
                     </div>
                   </div>
@@ -303,7 +308,7 @@
                         <p class="tabs__tagline">72 занятия</p>
                         <p class="tabs__price-shadow">20000</p>
                         <p class="tabs__price">20000 <span class="tabs__rub">₽</span></p>
-                        <button class="tabs__button" type="button">Купить абонемент</button>
+                        <a href="#"  class="tabs__button" type="button">Купить абонемент</a>
                       </div>
                     </div>
                     <div class="tabs__card" tabindex="0">
@@ -312,7 +317,7 @@
                         <p class="tabs__tagline">с 8:00 до 17:00</p>
                         <p class="tabs__price-shadow">8000</p>
                         <p class="tabs__price">8000 <span class="tabs__rub">₽</span></p>
-                        <button class="tabs__button" type="button">Купить абонемент</button>
+                        <a href="#"  class="tabs__button" type="button">Купить абонемент</a>
                       </div>
                     </div>
                     <div class="tabs__card" tabindex="0">
@@ -321,7 +326,7 @@
                         <p class="tabs__tagline">с 8:00 до 22:00</p>
                         <p class="tabs__price-shadow">14000</p>
                         <p class="tabs__price">14000 <span class="tabs__rub">₽</span></p>
-                        <button class="tabs__button" type="button">Купить абонемент</button>
+                        <a href="#" class="tabs__button" type="button">Купить абонемент</a>
                       </div>
                     </div>
                   </div>
@@ -334,7 +339,7 @@
                         <p class="tabs__tagline">144 занятия</p>
                         <p class="tabs__price-shadow">35000</p>
                         <p class="tabs__price">35000 <span class="tabs__rub">₽</span></p>
-                        <button class="tabs__button" type="button">Купить абонемент</button>
+                        <a href="#" class="tabs__button" type="button">Купить абонемент</a>
                       </div>
                     </div>
                     <div class="tabs__card" tabindex="0">
@@ -343,7 +348,7 @@
                         <p class="tabs__tagline">с 8:00 до 17:00</p>
                         <p class="tabs__price-shadow">14000</p>
                         <p class="tabs__price">14000 <span class="tabs__rub">₽</span></p>
-                        <button class="tabs__button" type="button">Купить абонемент</button>
+                        <a href="#" class="tabs__button" type="button">Купить абонемент</a>
                       </div>
                     </div>
                     <div class="tabs__card" tabindex="0">
@@ -352,7 +357,7 @@
                         <p class="tabs__tagline">с 8:00 до 22:00</p>
                         <p class="tabs__price-shadow">25000</p>
                         <p class="tabs__price">25000 <span class="tabs__rub">₽</span></p>
-                        <button class="tabs__button" type="button">Купить абонемент</button>
+                        <a href="#" class="tabs__button" type="button">Купить абонемент</a>
                       </div>
                     </div>
                   </div>
@@ -363,13 +368,15 @@
           <div class="catalog__decoration" aria-hidden="true">
               <picture>
                 <source
-                media="(max-width: 1199px)"
-                srcset="
-                  ./img/tablet/equipment-decor@x1.webp 1x,
-                  ./img/tablet/equipment-decor@x2.webp 2x
-                "
-              >
+                  type="image/webp"
+                  media="(max-width: 1199px)"
+                  srcset="
+                    ./img/tablet/equipment-decor@x1.webp 1x,
+                    ./img/tablet/equipment-decor@x2.webp 2x
+                  "
+                >
                 <source
+                  type="image/webp"
                   srcset="
                     ./img/desktop/equipment-decor@x1.webp 1x,
                     ./img/desktop/equipment-decor@x2.webp 2x
@@ -418,13 +425,15 @@
               <div class="super-games__img">
                 <picture>
                   <source
-                  media="(max-width: 767px)"
-                  srcset="
-                    ./img/mobile/promo-photo@x1.webp 1x,
-                    ./img/mobile/promo-photo@x2.webp 2x
-                  "
+                    type="image/webp"
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./img/mobile/promo-photo@x1.webp 1x,
+                      ./img/mobile/promo-photo@x2.webp 2x
+                    "
                   >
                   <source
+                    type="image/webp"
                     media="(max-width: 1199px)"
                     srcset="
                       ./img/tablet/promo-photo@x1.webp 1x,
@@ -432,6 +441,7 @@
                     "
                   >
                   <source
+                    type="image/webp"
                     srcset="
                       ./img/desktop/promo-photo@x1.webp 1x,
                       ./img/desktop/promo-photo@x2.webp 2x
@@ -456,7 +466,7 @@
                     srcset="./img/desktop/promo-photo@x2.jpg 2x"
                     width="660"
                     height="500"
-                    alt="Видео экскурсия по тренажёному залу"
+                    alt="Фото борца в дымке талька"
                   >
                 </picture>
               </div>
@@ -473,6 +483,7 @@
                     <div class="trainers__image">
                       <picture>
                         <source
+                          type="image/webp"
                           srcset="
                             ./img/desktop/anna-1@x1.webp 1x,
                             ./img/desktop/anna-1@x2.webp 2x
@@ -483,7 +494,7 @@
                           srcset="./img/desktop/anna-1@x2.jpg 2x"
                           width="260"
                           height="294"
-                          alt="Видео экскурсия по тренажёному залу"
+                          alt="Фото тренера"
                         >
                       </picture>
                       <p class="trainers__name">Анна Павлова</p>
@@ -502,17 +513,18 @@
                     <div class="trainers__image">
                       <picture>
                         <source
-                        srcset="
-                          ./img/desktop/alex-2@x1.webp 1x,
-                          ./img/desktop/alex-2@x2.webp 2x
-                        "
+                          type="image/webp"
+                          srcset="
+                            ./img/desktop/alex-2@x1.webp 1x,
+                            ./img/desktop/alex-2@x2.webp 2x
+                          "
                         >
                         <img
                           src="./img/desktop/alex-2@x1.jpg"
                           srcset="./img/desktop/alex-2@x2.jpg 2x"
                           width="260"
                           height="294"
-                          alt="Видео экскурсия по тренажёному залу"
+                          alt="Фото тренера"
                         >
                       </picture>
                       <p class="trainers__name">Алексей Лавров</p>
@@ -531,17 +543,18 @@
                     <div class="trainers__image">
                       <picture>
                         <source
-                        srcset="
-                          ./img/desktop/alexdr@x1.webp 1x,
-                          ./img/desktop/alexdr@x2.webp 2x
-                        "
+                          type="image/webp"
+                          srcset="
+                            ./img/desktop/alexdr@x1.webp 1x,
+                            ./img/desktop/alexdr@x2.webp 2x
+                          "
                         >
                         <img
                           src="./img/desktop/alexdr@x1.jpg"
                           srcset="./img/desktop/alexdr@x2.jpg 2x"
                           width="260"
                           height="294"
-                          alt="Видео экскурсия по тренажёному залу"
+                          alt="Фото тренера"
                         >
                       </picture>
                       <p class="trainers__name">Александр Пашков</p>
@@ -560,6 +573,7 @@
                     <div class="trainers__image">
                       <picture>
                         <source
+                          type="image/webp"
                           srcset="
                             ./img/desktop/maria-4@x1.webp 1x,
                             ./img/desktop/maria-4@x2.webp 2x
@@ -570,7 +584,7 @@
                           srcset="./img/desktop/maria-4@x2.jpg 2x"
                           width="260"
                           height="294"
-                          alt="Видео экскурсия по тренажёному залу"
+                          alt="Фото тренера"
                         >
                       </picture>
                       <p class="trainers__name">Мария Кетова</p>
@@ -664,18 +678,21 @@
                 <div class="promo__img">
                   <picture>
                     <source
+                      type="image/webp"
                       media="(max-width: 767px)"
                       srcset="
                       ./img/mobile/promo-girl@x1.webp 1x,
                       ./img/mobile/promo-girl@x2.webp 2x"
                     >
                     <source
+                      type="image/webp"
                       media="(max-width: 1199px)"
                       srcset="
                       ./img/tablet/promo-girl@x1.webp 1x,
                       ./img/tablet/promo-girl@x2.webp 2x"
                     >
                     <source
+                      type="image/webp"
                       srcset="
                       ./img/desktop/promo-girl@x1.webp 1x,
                       ./img/desktop/promo-girl@x2.webp 2x"
@@ -937,12 +954,18 @@
                   <div class="feedback__wrapper">
                     <div class="feedback__image">
                       <picture>
+                        <source
+                          type="image/webp"
+                          srcset="
+                          ./img/desktop/anna-round@x1.webp 1x,
+                          ./img/desktop/anna-round@x2.webp 2x"
+                        >
                         <img
                           src="./img/desktop/anna-round@x1.png"
                           srcset="./img/desktop/anna-round@x2.png 2x"
                           width="80"
                           height="80"
-                          alt="Видео экскурсия по тренажёному залу"
+                          alt="Фото автора отзыва"
                         >
                       </picture>
                     </div>
@@ -957,6 +980,7 @@
                     <div class="feedback__image">
                       <picture>
                         <source
+                          type="image/webp"
                           srcset="
                           ./img/desktop/anna-round@x1.webp 1x,
                           ./img/desktop/anna-round@x2.webp 2x"
@@ -966,7 +990,7 @@
                           srcset="./img/desktop/anna-round@x2.png 2x"
                           width="80"
                           height="80"
-                          alt="Видео экскурсия по тренажёному залу"
+                          alt="Фото автора отзыва"
                         >
                       </picture>
                     </div>
@@ -980,12 +1004,18 @@
                   <div class="feedback__wrapper">
                     <div class="feedback__image">
                       <picture>
+                        <source
+                          type="image/webp"
+                          srcset="
+                          ./img/desktop/anna-round@x1.webp 1x,
+                          ./img/desktop/anna-round@x2.webp 2x"
+                        >
                         <img
                           src="./img/desktop/anna-round@x1.png"
                           srcset="./img/desktop/anna-round@x2.png 2x"
                           width="80"
                           height="80"
-                          alt="Видео экскурсия по тренажёному залу"
+                          alt="Фото автора отзыва"
                         >
                       </picture>
                     </div>
@@ -1020,7 +1050,7 @@
                   data-message-extra="Заполнено некорректно"
                   data-required>
                     <label for="name">
-                      <input id="name" type="text" name="name" placeholder="Имя" data-required>
+                      <input id="name" aria-label="name" type="text" name="name" placeholder="Имя" data-required>
                     </label>
                   </div>
                   <div
@@ -1032,7 +1062,7 @@
                   data-phone-length="18"
                   data-required>
                     <label for="phone">
-                      <input id="phone" type="tel" name="phone" placeholder="Телефон" data-required>
+                      <input id="phone" aria-label="phone" type="tel" name="phone" placeholder="Телефон" data-required>
                     </label>
                   </div>
                 </fieldset>
@@ -1116,7 +1146,6 @@
         </div>
       </footer>
     </div>
-    <script src="js/vendor/swiper.js"></script>
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>

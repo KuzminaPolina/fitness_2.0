@@ -35,6 +35,11 @@
     @include vp-1366 {
       padding-top: 15px;
     }
+
+    @include vp-768 {
+      padding-top: 25px;
+      font-size: 16px;
+    }
   }
 
   &__element:last-child {
@@ -61,6 +66,11 @@
 
     @include vp-1366 {
       padding: 0;
+    }
+
+    @include vp-768 {
+      font-size: 16px;
+      padding-top: 8px;
     }
   }
 
@@ -92,8 +102,10 @@
   right: 0;
   margin: auto;
 
-  @include vp-1366 {
-    top: 15%;
+  @include vp-768 {
+    width: 32px;
+    height: 32px;
+    top: 25%;
   }
 }
 
@@ -102,10 +114,16 @@
   position: absolute;
   top: 20px;
   left: 12px;
-  width: 18px;
+  width: 16px;
   height: 1px;
   background-color: $color-default-blue;
   content: "";
+
+  @include vp-768 {
+    top: 15px;
+    left: 9px;
+    width: 13px;
+  }
 }
 
 .accordion__button-icon::before {
@@ -135,6 +153,6 @@
 
   @include vp-768 {
     font-size: 18px;
-    max-width: 215px;
+    max-width: 220px;
   }
 }

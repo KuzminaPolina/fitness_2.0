@@ -38,7 +38,7 @@
   }
 
   @include vp-768 {
-    padding: 35px 15px 70px;
+    padding: 25px 15px 70px;
   }
 }
 
@@ -61,7 +61,7 @@
   @include vp-768 {
     font-size: 32px;
     letter-spacing: 0.96px;
-    margin-bottom: 5px;
+    margin-bottom: 30px;
     text-align: center;
   }
 }
@@ -192,6 +192,12 @@
   @include vp-1366 {
     top: 59%;
   }
+
+  @include vp-768 {
+    width: 20px;
+    height: 20px;
+    top: 55%;
+  }
 }
 
 .trainers__button::after {
@@ -207,8 +213,8 @@
   transform: rotate(-45deg);
 
   @include vp-768 {
-    width: 19px;
-    height: 19px;
+    width: 15px;
+    height: 15px;
   }
 }
 
@@ -221,7 +227,7 @@
   transform: rotate(135deg);
 
   @include vp-768 {
-    width: 19px;
-    height: 19px;
+    width: 15px;
+    height: 15px;
   }
 }

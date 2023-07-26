@@ -14,7 +14,7 @@
   }
 
   @include vp-768 {
-    padding: 70px 0 70px;
+    padding: 63px 0 70px;
   }
 }
 
@@ -67,6 +67,7 @@
   @media (max-width: $vp-768) {
     font-size: 32px;
     letter-spacing: 0.96px;
+    margin-bottom: 5px;
   }
 }
 
@@ -81,6 +82,10 @@
 
   @media (max-width: $vp-1366) {
     margin-bottom: 32px;
+  }
+
+  @media (max-width: $vp-768) {
+    margin-bottom: 25px;
   }
 }
 
@@ -116,6 +121,10 @@
   @media (max-width: $vp-1366) {
     margin-bottom: 45px;
   }
+
+  @media (max-width: $vp-768) {
+    margin-bottom: 32px;
+  }
 }
 
 .gym__image {
@@ -128,7 +137,7 @@
 
   @media (max-width: $vp-768) {
     width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
   }
 }
 
@@ -137,6 +146,13 @@
     width: 678px;
     height: 345px;
     object-fit: cover;
+  }
+
+  @media (max-width: $vp-768) {
+    width: 100%;
+    height: 313px;
+    object-fit: cover;
+    margin-bottom: 40px;
   }
 }
 

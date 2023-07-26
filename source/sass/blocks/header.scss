@@ -29,6 +29,10 @@
   @include vp-1366 {
     padding: 35px 0 18px;
   }
+
+  @include vp-768 {
+    padding: 15px 0;
+  }
 }
 
 .header__logo {

@@ -27,7 +27,7 @@
 
   @include vp-768 {
     width: 100%;
-    padding: 70px 15px;
+    padding: 63px 15px;
   }
 }
 
@@ -50,7 +50,7 @@
   @include vp-768 {
     font-size: 32px;
     letter-spacing: 0.96px;
-    margin-bottom: 50px;
+    margin-bottom: 42px;
   }
 }
 
@@ -68,6 +68,10 @@
   width: 25px;
   height: 25px;
   padding: 0;
+
+  @include vp-768 {
+    top: 50.5%;
+  }
 }
 
 .feedback__button--prev::before {
@@ -79,8 +83,8 @@
   transform: rotate(-45deg);
 
   @include vp-768 {
-    width: 19px;
-    height: 19px;
+    width: 15px;
+    height: 15px;
   }
 }
 
@@ -93,8 +97,8 @@
   transform: rotate(135deg);
 
   @include vp-768 {
-    width: 19px;
-    height: 19px;
+    width: 15px;
+    height: 15px;
   }
 }
 
@@ -107,14 +111,28 @@
   color: $color-default-white;
 
   @include vp-768 {
-    padding: 40px;
+    padding: 40px 30px 0;
     grid-template-columns: 68px 1fr;
+    column-gap: 15px;
+  }
+}
+
+.feedback__image {
+  @include vp-768 {
+    display: flex;
+    align-items: flex-end;
   }
 }
 
 .feedback__content {
   @include vp-768 {
     margin: 0 30px;
+  }
+}
+
+.feedback__image picture img {
+  @include vp-768 {
+    transform: translateX(13px);
   }
 }
 
@@ -127,7 +145,7 @@
   margin-bottom: 15px;
 
   @include vp-768 {
-    transform: translate(83px, -68px);
+    transform: translate(95px, -55px);
     max-width: 62px;
   }
 }
@@ -146,6 +164,7 @@
   line-height: 140%;
 
   @include vp-768 {
-    transform: translateY(-50px);
+    text-align: center;
+    transform: translateY(-40px);
   }
 }

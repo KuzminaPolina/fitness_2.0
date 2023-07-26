@@ -19,6 +19,7 @@
   @media (max-width: $vp-768) {
     flex-direction: column;
     align-items: flex-start;
+    padding-bottom: 50px;
   }
 }
 
@@ -44,7 +45,7 @@
   @media (max-width: $vp-768) {
     display: block;
     column-count: 2;
-    column-gap: 70px;
+    column-gap: 45px;
     margin-bottom: 10px;
   }
 }
@@ -91,13 +92,13 @@
 
 .footer__item {
   @media (max-width: $vp-768) {
-    margin-bottom: 30px;
+    margin-bottom: 18px;
   }
 }
 
 .footer__item:first-child {
   @media (max-width: $vp-768) {
-    margin-top: 55px;
+    margin-top: 45px;
   }
 }
 

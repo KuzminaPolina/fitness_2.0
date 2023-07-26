@@ -33,7 +33,6 @@
   box-sizing: border-box;
 
   @media (max-width: $vp-1366) {
-    //justify-content: space-between;
     margin: 0;
     margin-top: 50px;
     max-width: 324px;
@@ -72,6 +71,10 @@
 
   @media (max-width: $vp-1366) {
     margin-bottom: 35px;
+  }
+
+  @media (max-width: $vp-768) {
+    margin-bottom: 25px;
   }
 }
 
@@ -115,7 +118,8 @@
   }
 
   @media (max-width: $vp-768) {
-    margin-right: -15px;
+    margin-top: 80px;
+    margin-right: -10px;
   }
 }
 
@@ -151,9 +155,13 @@
   background-color: $color-transparent;
   border: solid 4px $color-default-white;
   padding: 20px 55px;
+  text-align: center;
 
   @media (max-width: $vp-1366) {
     padding: 20px 30px;
+  }
+  @include vp-768 {
+    width: 100%;
   }
 }
 
