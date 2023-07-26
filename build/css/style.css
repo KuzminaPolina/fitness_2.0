@@ -2769,6 +2769,48 @@ button,
   }
 }
 
+[data-tabs=parent] {
+  overflow: hidden;
+}
+[data-tabs=parent].no-transition > [data-tabs=control],
+[data-tabs=parent].no-transition > [data-tabs=content],
+[data-tabs=parent].no-transition > [data-tabs=element] {
+  -webkit-transition: none;
+  transition: none;
+}
+[data-tabs=parent].no-transition-global [data-tabs=control],
+[data-tabs=parent].no-transition-global [data-tabs=content],
+[data-tabs=parent].no-transition-global [data-tabs=element] {
+  -webkit-transition: none;
+  transition: none;
+}
+
+[data-tabs=parent] [data-tabs=content] {
+  position: relative;
+}
+
+[data-tabs=element] {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-in, visibility 0.3s ease-in;
+  transition: opacity 0.3s ease-in, visibility 0.3s ease-in;
+}
+
+[data-tabs=element].for-load {
+  position: static;
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: none;
+  transition: none;
+}
+
+[data-tabs=element].is-active {
+  z-index: 1;
+  visibility: visible;
+  opacity: 1;
+}
+
 .catalog__tabs {
   width: 1366px;
 }
@@ -3054,48 +3096,6 @@ button,
   outline: none;
   color: #ffffff;
   cursor: pointer;
-}
-
-[data-tabs=parent] {
-  overflow: hidden;
-}
-[data-tabs=parent].no-transition > [data-tabs=control],
-[data-tabs=parent].no-transition > [data-tabs=content],
-[data-tabs=parent].no-transition > [data-tabs=element] {
-  -webkit-transition: none;
-  transition: none;
-}
-[data-tabs=parent].no-transition-global [data-tabs=control],
-[data-tabs=parent].no-transition-global [data-tabs=content],
-[data-tabs=parent].no-transition-global [data-tabs=element] {
-  -webkit-transition: none;
-  transition: none;
-}
-
-[data-tabs=parent] [data-tabs=content] {
-  position: relative;
-}
-
-[data-tabs=element] {
-  position: absolute;
-  visibility: hidden;
-  opacity: 0;
-  -webkit-transition: opacity 0.3s ease-in, visibility 0.3s ease-in;
-  transition: opacity 0.3s ease-in, visibility 0.3s ease-in;
-}
-
-[data-tabs=element].for-load {
-  position: static;
-  visibility: visible;
-  opacity: 1;
-  -webkit-transition: none;
-  transition: none;
-}
-
-[data-tabs=element].is-active {
-  z-index: 1;
-  visibility: visible;
-  opacity: 1;
 }
 
 .super-games__container {

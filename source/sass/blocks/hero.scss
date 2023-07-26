@@ -160,6 +160,7 @@
   @media (max-width: $vp-1366) {
     padding: 20px 30px;
   }
+
   @include vp-768 {
     width: 100%;
   }
