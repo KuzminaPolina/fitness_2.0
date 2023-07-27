@@ -78,3 +78,11 @@
     height: auto;
   }
 }
+
+.catalog__tabs {
+  width: 1366px;
+
+  @include vp-1366 {
+    max-width: 100%;
+  }
+}
