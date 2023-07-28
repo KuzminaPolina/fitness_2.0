@@ -3623,11 +3623,6 @@ button,
   overflow: hidden;
 }
 
-.swiper-button-prev::after,
-.swiper-button-next::after {
-  display: none;
-}
-
 .feedback__container {
   width: 680px;
   margin: 0 auto;
