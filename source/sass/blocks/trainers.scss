@@ -1,12 +1,12 @@
 .trainers {
   width: 100%;
-  padding: 0 40px;
+  padding: 0;
   background-color: $color-default-white;
 
-  @include vp-1366 {
+  @include vp-1200 {
     max-width: 768px;
     margin: 0 auto;
-    padding: 0 45px 35px;
+    //padding: 0 45px 35px;
   }
 
   @include vp-768 {
@@ -22,7 +22,7 @@
   margin: 0 auto;
   padding: 53px 45px 90px;
 
-  @include vp-1366 {
+  @include vp-1200 {
     padding: 0;
   }
 }
@@ -31,7 +31,7 @@
   padding: 0 58px;
   position: relative;
 
-  @include vp-1366 {
+  @include vp-1200 {
     max-width: 768px;
     margin: 0 auto;
     padding: 50px 50px 50px;
@@ -51,7 +51,7 @@
   margin: 0;
   margin-bottom: 32px;
 
-  @include vp-1366 {
+  @include vp-1200 {
     font-size: 42px;
     letter-spacing: 1.26px;
     margin-bottom: 15px;
@@ -118,7 +118,7 @@
   align-items: center;
   display: none;
 
-  @include vp-1366 {
+  @include vp-1200 {
     width: 260px;
   }
 
@@ -159,7 +159,7 @@
 .trainers__item {
   margin-right: 10px;
 
-  @include vp-1366 {
+  @include vp-1200 {
     margin-right: 0;
   }
 
@@ -189,7 +189,7 @@
   height: 25px;
   padding: 0;
 
-  @include vp-1366 {
+  @include vp-1200 {
     top: 59%;
   }
 

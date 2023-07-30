@@ -3788,14 +3788,13 @@ button,
 
 .trainers {
   width: 100%;
-  padding: 0 40px;
+  padding: 0;
   background-color: #ffffff;
 }
-@media (max-width: 1365px) {
+@media (max-width: 1199px) {
   .trainers {
     max-width: 768px;
     margin: 0 auto;
-    padding: 0 45px 35px;
   }
 }
 @media (max-width: 767px) {
@@ -3812,7 +3811,7 @@ button,
   margin: 0 auto;
   padding: 53px 45px 90px;
 }
-@media (max-width: 1365px) {
+@media (max-width: 1199px) {
   .trainers__wrapper {
     padding: 0;
   }
@@ -3822,7 +3821,7 @@ button,
   padding: 0 58px;
   position: relative;
 }
-@media (max-width: 1365px) {
+@media (max-width: 1199px) {
   .trainers__container {
     max-width: 768px;
     margin: 0 auto;
@@ -3844,7 +3843,7 @@ button,
   margin: 0;
   margin-bottom: 32px;
 }
-@media (max-width: 1365px) {
+@media (max-width: 1199px) {
   .trainers__header {
     font-size: 42px;
     letter-spacing: 1.26px;
@@ -3921,7 +3920,7 @@ button,
           align-items: center;
   display: none;
 }
-@media (max-width: 1365px) {
+@media (max-width: 1199px) {
   .trainers__overlay {
     width: 260px;
   }
@@ -3965,7 +3964,7 @@ button,
 .trainers__item {
   margin-right: 10px;
 }
-@media (max-width: 1365px) {
+@media (max-width: 1199px) {
   .trainers__item {
     margin-right: 0;
   }
@@ -3994,7 +3993,7 @@ button,
   height: 25px;
   padding: 0;
 }
-@media (max-width: 1365px) {
+@media (max-width: 1199px) {
   .trainers__button {
     top: 59%;
   }
