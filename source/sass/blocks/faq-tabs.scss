@@ -7,7 +7,7 @@
   margin: 0 auto;
   padding: 120px 103px 68px;
 
-  @include vp-1366 {
+  @include vp-1200 {
     max-width: 768px;
     margin: 0 auto;
     padding: 110px 45px 30px;
@@ -29,7 +29,7 @@
   line-height: normal;
   margin-bottom: 40px;
 
-  @include vp-1366 {
+  @include vp-1200 {
     font-size: 42px;
     letter-spacing: 1.26px;
     margin-bottom: 40px;
@@ -47,7 +47,7 @@
 .faq__tabs {
   display: flex;
 
-  @include vp-1366 {
+  @include vp-1200 {
     flex-direction: column;
   }
 }
@@ -59,14 +59,14 @@
   margin-right: 40px;
   max-height: 250px;
 
-  @media screen and (max-width: 1365px) {
+  @include vp-1200 {
     flex-direction: row;
     margin: 0;
     gap: 10px;
     margin-bottom: 30px;
   }
 
-  @media screen and (max-width: 767px) {
+  @include vp-768 {
     flex-direction: row;
     justify-content: center;
     margin: 0;
@@ -91,13 +91,13 @@
   color: $color-default-blue;
   border: 1px solid rgba(16, 38, 84, 0.2);
 
-  @media screen and (max-width: 1365px) {
+  @include vp-1200 {
     padding: 17px 15px;
     box-sizing: border-box;
     min-width: 160px;
   }
 
-  @media screen and (max-width: 767px) {
+  @include vp-768 {
     padding: 14px 0;
     font-size: 16px;
     min-width: 140px;

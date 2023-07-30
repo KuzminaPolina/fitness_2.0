@@ -6,17 +6,17 @@
 .footer__nav {
   max-width: 1366px;
   margin: 0 auto;
-  padding: 44px 103px 35px;
+  padding: 44px 0 35px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   position: relative;
 
-  @media (max-width: $vp-1366) {
+  @include vp-1200 {
     padding: 44px 0 44px;
   }
 
-  @media (max-width: $vp-768) {
+  @include vp-768 {
     flex-direction: column;
     align-items: flex-start;
     padding-bottom: 50px;
@@ -38,11 +38,11 @@
   margin: 0 auto 0 0;
   padding: 0;
 
-  @media (max-width: $vp-1366) {
+  @include vp-1200 {
     gap: 0;
   }
 
-  @media (max-width: $vp-768) {
+  @include vp-768 {
     display: block;
     column-count: 2;
     column-gap: 45px;
@@ -60,14 +60,14 @@
   line-height: normal;
   letter-spacing: 0.52px;
 
-  @media (max-width: $vp-1366) {
+  @include vp-1200 {
     font-size: 24px;
     line-height: normal;
     font-weight: 700;
     letter-spacing: 0.48px;
   }
 
-  @media (max-width: $vp-768) {
+  @include vp-768 {
     position: absolute;
     top: 45px;
     left: 0;
@@ -85,19 +85,19 @@
   line-height: normal;
   font-weight: 400;
 
-  @media (max-width: $vp-768) {
+  @include vp-768 {
     font-size: 16px;
   }
 }
 
 .footer__item {
-  @media (max-width: $vp-768) {
+  @include vp-768 {
     margin-bottom: 18px;
   }
 }
 
 .footer__item:first-child {
-  @media (max-width: $vp-768) {
+  @include vp-768 {
     margin-top: 45px;
   }
 }
