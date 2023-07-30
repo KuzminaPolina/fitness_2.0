@@ -109,7 +109,8 @@
   top: 0;
   left: 0;
   height: 100%;
-  width: 260px;
+  width: 100%;
+  max-width: 260px;
   background-color: $swiper-overlay;
   color: $color-default-white;
   padding: 45px;
@@ -119,7 +120,7 @@
   display: none;
 
   @include vp-1200 {
-    width: 260px;
+    width: 100%;
   }
 
   @include vp-768 {

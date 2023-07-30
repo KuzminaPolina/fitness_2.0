@@ -3,7 +3,7 @@
   margin: 0 auto;
   padding: 128px 103px 120px;
 
-  @include vp-1366 {
+  @include vp-1200 {
     padding: 90px 45px;
   }
 
@@ -28,7 +28,7 @@
   line-height: normal;
   margin-bottom: 34px;
 
-  @include vp-1366 {
+  @include vp-1200 {
     font-size: 42px;
     letter-spacing: 1.26px;
     margin-bottom: 40px;
@@ -64,7 +64,6 @@
   font-weight: 400;
   line-height: normal;
   margin: 0;
-  margin-bottom: 190px;
 
   @include vp-768 {
     margin-bottom: 30px;
@@ -83,6 +82,8 @@
   text-transform: uppercase;
   border-bottom: solid 1px $color-default-white;
   max-width: fit-content;
+  margin-bottom: 0;
+  margin-top: auto;
 }
 
 .promo__secondary-header {
@@ -106,37 +107,15 @@
   font-weight: 400;
   line-height: normal;
   margin-top: 0;
-  margin-bottom: 68px;
 
-  @include vp-1366 {
-    margin-bottom: 55px;
+  @include vp-1200 {
+    //margin-bottom: 55px;
+    margin-bottom: auto;
   }
 
   @include vp-768 {
     text-align: center;
     margin-bottom: 35px;
-  }
-}
-
-.promo__secondary-link {
-  color: $color-resolution-blue;
-  font-family: $ff-secondary;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.6px;
-  text-transform: uppercase;
-  border-bottom: solid 1px $color-resolution-blue;
-
-  @include vp-1366 {
-    margin-top: auto;
-    margin-bottom: 0;
-    align-self: flex-start;
-  }
-
-  @include vp-768 {
-    align-self: center;
   }
 }
 
@@ -147,10 +126,15 @@
 }
 
 .promo__main {
+  width: 50%;
   display: flex;
   margin: 0;
+  margin-right: 40px;
 
-  @include vp-1366 {
+  @include vp-1200 {
+    width: 100%;
+    margin-right: 0;
+    margin: 0 auto;
     margin-bottom: 35px;
   }
 
@@ -160,11 +144,23 @@
   }
 }
 
+.promo__main-content {
+  display: flex;
+
+  @include vp-1200 {
+    margin: 0 auto;
+  }
+
+  @include vp-768 {
+    flex-direction: column;
+  }
+}
+
 .promo__content-wrapper {
   display: flex;
-  justify-content: space-between;
 
-  @include vp-1366 {
+  @include vp-1200 {
+    display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -173,15 +169,18 @@
 
 .promo__secondary {
   margin: 0;
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
-  @include vp-1366 {
+  @include vp-1200 {
+    width: 100%;
     display: flex;
     flex-direction: row;
     column-gap: 30px;
     max-width: 678px;
+    height: 211px;
   }
 
   @include vp-768 {
@@ -198,9 +197,9 @@
   color: $color-default-white;
   display: flex;
   flex-direction: column;
-  max-width: 280px;
+  max-width: 50%;
 
-  @include vp-1366 {
+  @include vp-1200 {
     max-width: 280px;
   }
 
@@ -214,10 +213,12 @@
 .promo__wrapper {
   background: $gradient-text-crimson-red-to-cobalt;
   padding: 7px;
-  min-width: 560px;
+  min-width: 100%;
+  height: 45%;
 
-  @include vp-1366 {
+  @include vp-1200 {
     min-width: 324px;
+    height: 100%;
   }
 
   @include vp-768 {
@@ -228,8 +229,11 @@
 .promo__content {
   background-color: $color-default-white;
   padding: 20px 28px 25px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 
-  @include vp-1366 {
+  @include vp-1200 {
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -238,5 +242,30 @@
   @include vp-768 {
     padding: 30px 28px 35px;
     align-items: center;
+  }
+}
+
+.promo__secondary-link {
+  color: $color-resolution-blue;
+  font-family: $ff-secondary;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  border-bottom: solid 1px $color-resolution-blue;
+  margin-bottom: 0;
+  margin-top: auto;
+  max-width: fit-content;
+
+  @include vp-1200 {
+    margin-top: auto;
+    margin-bottom: 0;
+    align-self: flex-start;
+  }
+
+  @include vp-768 {
+    align-self: center;
   }
 }

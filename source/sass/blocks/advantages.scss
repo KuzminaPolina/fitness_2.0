@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: center;
 
-  @include vp-1366 {
+  @include vp-1200 {
     display: block;
     padding-top: 90px;
   }
@@ -24,7 +24,7 @@
   margin: 0 auto;
   padding-bottom: 129px;
 
-  @include vp-1366 {
+  @include vp-1200 {
     display: block;
     max-width: 768px;
     margin: 0 auto;
@@ -47,7 +47,7 @@
   text-align: center;
   margin-bottom: 45px;
 
-  @include vp-1366 {
+  @include vp-1200 {
     font-size: 42px;
     letter-spacing: 1.26px;
     margin-bottom: 40px;
@@ -61,7 +61,7 @@
 }
 
 .advantages__side {
-  @include vp-1366 {
+  @include vp-1200 {
     display: grid;
     grid-template-columns: 300px 314px;
     column-gap: 60px;
@@ -83,12 +83,12 @@
   &--space {
     padding-left: 20px;
 
-    @include vp-1366 {
+    @include vp-1200 {
       padding-left: 0;
     }
   }
 
-  @include vp-1366 {
+  @include vp-1200 {
     display: flex;
     align-items: center;
     column-gap: 0;
@@ -105,7 +105,7 @@
   &--experience {
     padding-top: 70px;
 
-    @include vp-1366 {
+    @include vp-1200 {
       padding-top: 0;
     }
   }
@@ -115,7 +115,7 @@
     padding-bottom: 75px;
     border-bottom: solid 2px rgba(209, 10, 66, 0.2);
 
-    @include vp-1366 {
+    @include vp-1200 {
       padding-bottom: 0;
       border-bottom: none;
     }
@@ -128,7 +128,7 @@
   justify-content: flex-start;
   align-items: flex-start;
 
-  @include vp-1366 {
+  @include vp-1200 {
     margin-right: 29px;
   }
 
@@ -144,7 +144,7 @@
 .advantages__right {
   padding-top: 5px;
 
-  @include vp-1366 {
+  @include vp-1200 {
     padding-top: 0;
   }
 
@@ -173,7 +173,7 @@
   height: 307px;
   margin-top: 10px;
 
-  @include vp-1366 {
+  @include vp-1200 {
     max-width: 442px;
     margin: 0 auto;
     margin-bottom: 40px;
@@ -192,7 +192,7 @@
 .advantages__center .advantages__text {
   text-align: center;
 
-  @include vp-1366 {
+  @include vp-1200 {
     max-width: 172px;
     text-align: center;
   }
@@ -214,7 +214,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
-  @include vp-1366 {
+  @include vp-1200 {
     margin: 0;
     font-size: 58px;
     line-height: 58px;
@@ -238,7 +238,7 @@
   line-height: 150%;
   margin-bottom: 35px;
 
-  @include vp-1366 {
+  @include vp-1200 {
     margin: 0;
     font-size: 20px;
     margin-bottom: 15px;
@@ -258,7 +258,7 @@
   color: $color-persian-blue;
   margin: 0;
 
-  @include vp-1366 {
+  @include vp-1200 {
     margin: 0;
   }
 
@@ -276,7 +276,7 @@
   line-height: 150%;
   margin-bottom: 5px;
 
-  @include vp-1366 {
+  @include vp-1200 {
     margin: 0;
     font-size: 20px;
     margin-bottom: 0;
