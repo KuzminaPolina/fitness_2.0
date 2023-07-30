@@ -3,7 +3,7 @@
   padding: 140px 0 120px;
   position: relative;
 
-  @include vp-1366 {
+  @include vp-1200 {
     padding: 115px 45px;
   }
 
@@ -59,8 +59,9 @@
   position: absolute;
   bottom: -18%;
   right: 0;
+  width: 240px;
 
-  @include vp-1366 {
+  @include vp-1200 {
     position: absolute;
     bottom: -4.5%;
     right: 0;
@@ -73,7 +74,9 @@
 }
 
 .catalog__decoration img {
-  @include vp-1366 {
+  width: 240px;
+
+  @include vp-1200 {
     width: 306px;
     height: auto;
   }

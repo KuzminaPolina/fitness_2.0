@@ -3,7 +3,7 @@
   margin: 0 auto;
   padding: 120px 103px 53px;
 
-  @include vp-1366 {
+  @include vp-1200 {
     padding: 73px 45px 50px;
     position: relative;
   }
@@ -15,11 +15,13 @@
 
 .super-games__content {
   max-width: 1160px;
-  margin: 0 auto;
   display: flex;
+  justify-content: center;
+  margin: 0 auto;
 
-  @include vp-1366 {
+  @include vp-1200 {
     max-width: 678px;
+    justify-content: center;
     z-index: 30;
   }
 
@@ -27,6 +29,7 @@
     flex-direction: column;
     align-items: center;
     max-width: 290px;
+    justify-content: center;
   }
 }
 
@@ -35,7 +38,7 @@
   padding: 85px 78px 80px;
 
   @include vp-1366 {
-    padding: 48px 45px;
+    padding: 45px;
   }
 
   @include vp-768 {
@@ -51,7 +54,7 @@
   row-gap: 10px;
   margin-bottom: 24px;
 
-  @include vp-1366 {
+  @include vp-1200 {
     grid-template-columns: 117px 56px;
     grid-template-rows: 45px 45px;
     column-gap: 29px;
@@ -73,7 +76,7 @@
   color: $color-default-white;
   text-transform: uppercase;
 
-  @include vp-1366 {
+  @include vp-1200 {
     font-size: 48px;
     letter-spacing: 1.44px;
   }
@@ -96,7 +99,7 @@
   line-height: 27px;
   margin: 0;
 
-  @include vp-1366 {
+  @include vp-1200 {
     font-size: 12px;
     line-height: 18px;
   }
@@ -116,7 +119,7 @@
   width: 64px;
   border-top: solid 1px $color-default-white;
 
-  @include vp-1366 {
+  @include vp-1200 {
     width: 42px;
   }
 }
@@ -129,7 +132,7 @@
   color: $color-default-white;
   margin-right: 7px;
 
-  @include vp-1366 {
+  @include vp-1200 {
     font-size: 24px;
     line-height: 36px;
   }
@@ -141,7 +144,7 @@
   line-height: 21px;
   color: $color-default-white;
 
-  @include vp-1366 {
+  @include vp-1200 {
     font-size: 10px;
     line-height: 15px;
   }
@@ -155,7 +158,7 @@
   color: $color-default-white;
   margin: 0;
 
-  @include vp-1366 {
+  @include vp-1200 {
     font-size: 24px;
     line-height: 36px;
   }
@@ -169,7 +172,7 @@
   margin-bottom: 40px;
   color: $color-default-white;
 
-  @include vp-1366 {
+  @include vp-1200 {
     font-size: 12px;
     line-height: 18px;
     margin-bottom: 25px;
@@ -189,7 +192,7 @@
   cursor: pointer;
   color: $color-default-white;
 
-  @include vp-1366 {
+  @include vp-1200 {
     font-size: 10px;
     letter-spacing: 0.5px;
     padding: 15px 50px;

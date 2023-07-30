@@ -2693,7 +2693,7 @@ button,
   padding: 140px 0 120px;
   position: relative;
 }
-@media (max-width: 1365px) {
+@media (max-width: 1199px) {
   .catalog {
     padding: 115px 45px;
   }
@@ -2763,8 +2763,9 @@ button,
   position: absolute;
   bottom: -18%;
   right: 0;
+  width: 240px;
 }
-@media (max-width: 1365px) {
+@media (max-width: 1199px) {
   .catalog__decoration {
     position: absolute;
     bottom: -4.5%;
@@ -2778,7 +2779,10 @@ button,
   }
 }
 
-@media (max-width: 1365px) {
+.catalog__decoration img {
+  width: 240px;
+}
+@media (max-width: 1199px) {
   .catalog__decoration img {
     width: 306px;
     height: auto;
@@ -2927,7 +2931,7 @@ button,
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-@media (max-width: 1365px) {
+@media (max-width: 1199px) {
   .tabs__cards {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2947,7 +2951,7 @@ button,
   width: 360px;
   padding: 7px;
 }
-@media (max-width: 1365px) {
+@media (max-width: 1199px) {
   .tabs__card {
     width: 442px;
   }
@@ -2998,7 +3002,7 @@ button,
 .tabs__card:not(:last-child) {
   margin: 0;
 }
-@media (max-width: 1365px) {
+@media (max-width: 1199px) {
   .tabs__card:not(:last-child) {
     margin-bottom: 40px;
   }
@@ -3119,7 +3123,7 @@ button,
   margin: 0 auto;
   padding: 120px 103px 53px;
 }
-@media (max-width: 1365px) {
+@media (max-width: 1199px) {
   .super-games__container {
     padding: 73px 45px 50px;
     position: relative;
@@ -3133,14 +3137,20 @@ button,
 
 .super-games__content {
   max-width: 1160px;
-  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
 }
-@media (max-width: 1365px) {
+@media (max-width: 1199px) {
   .super-games__content {
     max-width: 678px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     z-index: 30;
   }
 }
@@ -3154,6 +3164,9 @@ button,
         -ms-flex-align: center;
             align-items: center;
     max-width: 290px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -3163,7 +3176,7 @@ button,
 }
 @media (max-width: 1365px) {
   .super-games__info {
-    padding: 48px 45px;
+    padding: 45px;
   }
 }
 @media (max-width: 767px) {
@@ -3185,7 +3198,7 @@ button,
   row-gap: 10px;
   margin-bottom: 24px;
 }
-@media (max-width: 1365px) {
+@media (max-width: 1199px) {
   .super-games__grid {
     -ms-grid-columns: 117px 56px;
     grid-template-columns: 117px 56px;
@@ -3216,7 +3229,7 @@ button,
   color: #ffffff;
   text-transform: uppercase;
 }
-@media (max-width: 1365px) {
+@media (max-width: 1199px) {
   .super-games__header {
     font-size: 48px;
     letter-spacing: 1.44px;
@@ -3249,7 +3262,7 @@ button,
   line-height: 27px;
   margin: 0;
 }
-@media (max-width: 1365px) {
+@media (max-width: 1199px) {
   .super-games__date-title {
     font-size: 12px;
     line-height: 18px;
@@ -3282,7 +3295,7 @@ button,
   width: 64px;
   border-top: solid 1px #ffffff;
 }
-@media (max-width: 1365px) {
+@media (max-width: 1199px) {
   .super-games__underline-date {
     width: 42px;
   }
@@ -3296,7 +3309,7 @@ button,
   color: #ffffff;
   margin-right: 7px;
 }
-@media (max-width: 1365px) {
+@media (max-width: 1199px) {
   .super-games__bignumber {
     font-size: 24px;
     line-height: 36px;
@@ -3309,7 +3322,7 @@ button,
   line-height: 21px;
   color: #ffffff;
 }
-@media (max-width: 1365px) {
+@media (max-width: 1199px) {
   .super-games__monthyear {
     font-size: 10px;
     line-height: 15px;
@@ -3324,7 +3337,7 @@ button,
   color: #ffffff;
   margin: 0;
 }
-@media (max-width: 1365px) {
+@media (max-width: 1199px) {
   .super-games__date-time {
     font-size: 24px;
     line-height: 36px;
@@ -3339,7 +3352,7 @@ button,
   margin-bottom: 40px;
   color: #ffffff;
 }
-@media (max-width: 1365px) {
+@media (max-width: 1199px) {
   .super-games__tagline {
     font-size: 12px;
     line-height: 18px;
@@ -3360,7 +3373,7 @@ button,
   cursor: pointer;
   color: #ffffff;
 }
-@media (max-width: 1365px) {
+@media (max-width: 1199px) {
   .super-games__button {
     font-size: 10px;
     letter-spacing: 0.5px;
