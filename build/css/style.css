@@ -4049,11 +4049,17 @@ button,
 @media (max-width: 1199px) {
   .promo__container {
     padding: 90px 45px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
 }
 @media (max-width: 767px) {
   .promo__container {
     padding: 90px 15px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
 }
 
@@ -4286,6 +4292,9 @@ button,
         -ms-flex-pack: justify;
             justify-content: space-between;
     row-gap: 30px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
 }
 

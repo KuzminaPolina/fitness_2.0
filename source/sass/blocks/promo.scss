@@ -5,10 +5,12 @@
 
   @include vp-1200 {
     padding: 90px 45px;
+    height: fit-content;
   }
 
   @include vp-768 {
     padding: 90px 15px;
+    height: fit-content;
   }
 }
 
@@ -187,6 +189,7 @@
     flex-direction: column;
     justify-content: space-between;
     row-gap: 30px;
+    height: fit-content;
   }
 }
 
