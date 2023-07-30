@@ -2,9 +2,13 @@
   position: absolute;
   width: 364px;
   top: 288px;
-  left: -63px;
+  left: -10%;
 
-  @media (max-width: $vp-1366) {
+  @include vp-1366 {
+    left: -2%;
+  }
+
+  @include vp-1200 {
     width: 266px;
     position: absolute;
     top: 75%;
@@ -70,7 +74,7 @@
   cursor: pointer;
   padding: 0;
 
-  @media (max-width: $vp-1366) {
+  @include vp-1200 {
     width: 73px;
     height: 73px;
     padding: 0;

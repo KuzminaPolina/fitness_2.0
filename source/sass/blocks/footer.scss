@@ -53,7 +53,7 @@
 .footer__logo {
   color: $color-default-white;
   height: fit-content;
-  margin-right: 278px;
+  margin-right: auto;
   font-size: 26px;
   font-style: normal;
   font-weight: 600;
@@ -65,7 +65,6 @@
     line-height: normal;
     font-weight: 700;
     letter-spacing: 0.48px;
-    margin-right: 60px;
   }
 
   @media (max-width: $vp-768) {
@@ -75,6 +74,7 @@
     font-size: 20px;
     line-height: 24px;
     font-weight: 600;
+    margin-right: 0;
   }
 }
 

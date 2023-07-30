@@ -44,6 +44,12 @@
   }
 }
 
+@mixin vp-1200 {
+  @media (max-width: ($vp-1200)) {
+    @content;
+  }
+}
+
 @mixin vp-768 {
   @media (max-width: ($vp-768)) {
     @content;

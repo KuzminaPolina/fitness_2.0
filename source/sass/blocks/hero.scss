@@ -3,18 +3,21 @@
   max-width: 1366px;
   margin: 0 auto;
   margin-top: -52px;
-  padding: 0 18px 50px 120px;
+  padding: 0 18px 50px 50px;
+  justify-content: flex-start;
 
-  @media (max-width: $vp-1366) {
+  @include vp-1366 {
+    justify-content: center;
     margin-top: 0;
-    padding: 0;
     padding-bottom: 82px;
     gap: 30px;
   }
 
-  @media (max-width: $vp-768) {
+  @include vp-768 {
     justify-content: center;
     align-items: center;
+    padding: 0;
+    padding-bottom: 80px;
   }
 }
 
@@ -32,7 +35,7 @@
   padding-bottom: 45px;
   box-sizing: border-box;
 
-  @media (max-width: $vp-1366) {
+  @media (max-width: $vp-1200) {
     margin: 0;
     margin-top: 50px;
     max-width: 324px;
@@ -52,7 +55,7 @@
   padding-right: 50px;
   margin-bottom: 15px;
 
-  @media (max-width: $vp-1366) {
+  @media (max-width: $vp-1200) {
     font-size: 34px;
     letter-spacing: 1.02px;
     padding-right: 0;
@@ -90,7 +93,7 @@
   text-transform: uppercase;
   -webkit-text-stroke: 4px;
 
-  @media (max-width: $vp-1366) {
+  @media (max-width: $vp-1200) {
     font-size: 70px;
     letter-spacing: 3.6px;
     line-height: normal;
@@ -157,7 +160,7 @@
   padding: 20px 55px;
   text-align: center;
 
-  @media (max-width: $vp-1366) {
+  @media (max-width: $vp-1200) {
     padding: 20px 30px;
   }
 
