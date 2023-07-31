@@ -12,12 +12,12 @@
 .feedback__container {
   width: 680px;
   margin: 0 auto;
-  padding: 120px 60px;
+  padding: 120px 80px;
   position: relative;
 
   @include vp-1200 {
     width: 100%;
-    padding: 90px 56px 95px;
+    padding: 90px 70px 95px;
   }
 
   @include vp-768 {
@@ -56,50 +56,88 @@
 }
 
 .feedback__button {
-  position: absolute;
-  top: 60%;
+  top: 58%;
   background: none;
   border: none;
-  width: 25px;
-  height: 25px;
+  color: $color-default-blue;
+  width: 56px;
+  height: 56px;
+  border: solid 1px $color-default-white;
+  border-radius: 50%;
+  background-color: $color-default-white;
   padding: 0;
 
+  @include vp-1200 {
+    top: 59%;
+  }
+
   @include vp-768 {
-    top: 50.5%;
+    width: 35px;
+    height: 35px;
   }
 }
 
 .feedback__button--prev::before {
   content: "";
-  width: 25px;
-  height: 25px;
-  border-top: solid 1px #afafaf;
-  border-left: solid 1px #afafaf;
+  width: 20px;
+  height: 20px;
+  border-top: solid 1px $color-default-blue;
+  border-left: solid 1px $color-default-blue;
   transform: rotate(-45deg);
+  position: absolute;
+  right: 12px;
 
   @include vp-768 {
     width: 15px;
     height: 15px;
+    position: absolute;
+    right: 6px;
   }
 }
 
 .feedback__button--next::before {
   content: "";
-  width: 25px;
-  height: 25px;
-  border-top: solid 1px #afafaf;
-  border-left: solid 1px #afafaf;
+  width: 20px;
+  height: 20px;
+  border-top: solid 1px $color-default-blue;
+  border-left: solid 1px $color-default-blue;
   transform: rotate(135deg);
+  position: absolute;
+  left: 12px;
 
   @include vp-768 {
     width: 15px;
     height: 15px;
+    position: absolute;
+    left: 6px;
   }
+}
+
+.feedback__button:hover,
+.feedback__button:focus-visible {
+  outline: solid 1px $color-default-blue;
+  border-radius: 50%;
+
+  @include vp-768 {
+    outline: none;
+  }
+}
+
+.feedback__button:active {
+  border: $color-default-white;
+  background-color: $color-default-blue;
+  color: $color-default-white;
+}
+
+.feedback__button--next:active::before,
+.feedback__button--prev:active::before {
+  border-top: solid 1px $color-default-white;
+  border-left: solid 1px $color-default-white;
 }
 
 .feedback__wrapper {
   background-color: $color-resolution-blue;
-  padding: 62px 62px 56px;
+  padding: 62px 40px 56px;
   display: grid;
   grid-template-columns: 80px 1fr;
   column-gap: 28px;

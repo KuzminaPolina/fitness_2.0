@@ -88,6 +88,23 @@
   margin-top: auto;
 }
 
+.promo__link:hover {
+  opacity: 0.7;
+}
+
+.promo__link:active {
+  opacity: 1;
+}
+
+.promo__link:focus-visible {
+  outline: solid 1px $color-default-white;
+  outline-offset: 10px;
+}
+
+.promo__link:disabled {
+  opacity: 0.3;
+}
+
 .promo__secondary-header {
   margin: 0;
   color: $color-resolution-blue;
@@ -235,6 +252,7 @@
   display: flex;
   flex-direction: column;
   height: 100%;
+  overflow: auto;
 
   @include vp-1200 {
     height: 100%;
@@ -271,4 +289,17 @@
   @include vp-768 {
     align-self: center;
   }
+}
+
+.promo__secondary-link:hover {
+  opacity: 0.7;
+}
+
+.promo__secondary-link:active {
+  opacity: 1;
+}
+
+.promo__secondary-link:focus-visible {
+  outline: solid 1px $color-default-blue;
+  outline-offset: 10px;
 }

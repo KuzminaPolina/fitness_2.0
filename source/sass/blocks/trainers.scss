@@ -20,25 +20,29 @@
 .trainers__wrapper {
   max-width: 1366px;
   margin: 0 auto;
-  padding: 53px 45px 90px;
+  padding: 53px 0 90px;
 
   @include vp-1200 {
+    padding: 0;
+  }
+
+  @include vp-768 {
     padding: 0;
   }
 }
 
 .trainers__container {
-  padding: 0 58px;
+  padding: 0 103px;
   position: relative;
 
   @include vp-1200 {
     max-width: 768px;
     margin: 0 auto;
-    padding: 50px 50px 50px;
+    padding: 50px 90px 50px;
   }
 
   @include vp-768 {
-    padding: 25px 15px 70px;
+    padding: 25px 45px 70px;
   }
 }
 
@@ -71,7 +75,7 @@
   padding: 0;
 
   @include vp-768 {
-    padding-left: 30px;
+    padding-left: 0;
   }
 }
 
@@ -100,7 +104,7 @@
   position: absolute;
 
   @include vp-768 {
-    width: 78%;
+    width: 100%;
   }
 }
 
@@ -182,12 +186,15 @@
 }
 
 .trainers__button {
-  top: 64%;
+  top: 60%;
   background: none;
   border: none;
-  color: #afafaf;
-  width: 25px;
-  height: 25px;
+  color: $color-default-blue;
+  width: 56px;
+  height: 56px;
+  border: solid 1px $color-default-white;
+  border-radius: 50%;
+  background-color: $color-default-white;
   padding: 0;
 
   @include vp-1200 {
@@ -195,36 +202,66 @@
   }
 
   @include vp-768 {
-    width: 20px;
-    height: 20px;
+    width: 35px;
+    height: 35px;
     top: 55%;
   }
 }
 
 .trainers__button--prev::before {
   content: "";
-  width: 25px;
-  height: 25px;
-  border-top: solid 1px #afafaf;
-  border-left: solid 1px #afafaf;
+  width: 20px;
+  height: 20px;
+  border-top: solid 1px $color-default-blue;
+  border-left: solid 1px $color-default-blue;
   transform: rotate(-45deg);
+  position: absolute;
+  right: 12px;
 
   @include vp-768 {
     width: 15px;
     height: 15px;
+    position: absolute;
+    right: 6px;
   }
 }
 
 .trainers__button--next::before {
   content: "";
-  width: 25px;
-  height: 25px;
-  border-top: solid 1px #afafaf;
-  border-left: solid 1px #afafaf;
+  width: 20px;
+  height: 20px;
+  border-top: solid 1px $color-default-blue;
+  border-left: solid 1px $color-default-blue;
   transform: rotate(135deg);
+  position: absolute;
+  left: 12px;
 
   @include vp-768 {
     width: 15px;
     height: 15px;
+    position: absolute;
+    left: 6px;
   }
+}
+
+.trainers__button:hover,
+.trainers__button:focus-visible {
+  outline: solid 1px $color-default-blue;
+  border-radius: 50%;
+
+  @include vp-768 {
+    outline: none;
+  }
+}
+
+.trainers__button:active {
+  border: $color-default-white;
+  background-color: $color-default-blue;
+  color: $color-default-white;
+}
+
+.trainers__button--next:active::before,
+.trainers__button--prev:active::before {
+  border-top: solid 1px $color-default-white;
+  border-left: solid 1px $color-default-white;
 }

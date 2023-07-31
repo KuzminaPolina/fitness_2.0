@@ -88,6 +88,15 @@
   @include vp-768 {
     font-size: 16px;
   }
+
+  &:hover:not(.focus-visible) {
+    border-bottom: solid 1px $color-default-white;
+  }
+
+  &.focus-visible:focus {
+    outline: solid 1px $color-default-white;
+    outline-offset: 2px;
+  }
 }
 
 .footer__item {
@@ -129,4 +138,30 @@
   padding: 0;
   margin: 0;
   height: 25px;
+  cursor: pointer;
+
+  &.focus-visible {
+    outline: none;
+    color: $color-egyptian-blue;
+  }
+}
+
+.footer__social-link:disabled {
+  opacity: 0.5;
+}
+
+.footer__social-link svg {
+  color: $color-default-white;
+
+  &:hover {
+    color: $color-egyptian-blue;
+  }
+
+  &.focus-visible {
+    color: $color-default-blue;
+  }
+}
+
+.footer__social-link:focus-visible > svg {
+  color: $color-egyptian-blue;
 }

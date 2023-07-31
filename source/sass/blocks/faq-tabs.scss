@@ -112,6 +112,12 @@
     background: $gradient-button-torch-red-to-cobalt;
     color: $color-default-white;
   }
+
+  @include hover-focus {
+    opacity: 1;
+    border: 1px solid $color-default-blue;
+    outline: none;
+  }
 }
 
 .faq__tabs-content {

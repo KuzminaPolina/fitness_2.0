@@ -44,6 +44,14 @@
     border-bottom: solid 2px $color-venetian-red;
     margin-bottom: -2px;
   }
+
+  &:hover,
+  &:focus-visible {
+    opacity: 1;
+    border-bottom: solid 2px $color-venetian-red;
+    margin-bottom: -2px;
+    outline: none;
+  }
 }
 
 .tabs__control:not(:last-child) {

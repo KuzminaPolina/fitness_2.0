@@ -9,7 +9,7 @@
   margin: 0 auto;
   padding: 0 103px;
 
-  @include vp-1366 {
+  @include vp-1200 {
     padding: 0 45px;
   }
 
@@ -26,7 +26,7 @@
   justify-content: space-between;
   align-items: flex-start;
 
-  @include vp-1366 {
+  @include vp-1200 {
     padding: 35px 0 18px;
   }
 
@@ -45,14 +45,14 @@
   line-height: normal;
   letter-spacing: 0.72px;
 
-  @media (max-width: $vp-1366) {
+  @include vp-1200 {
     font-size: 24px;
     line-height: normal;
     font-weight: 700;
     letter-spacing: 0.48px;
   }
 
-  @media (max-width: $vp-768) {
+  @include vp-768 {
     font-size: 20px;
     line-height: 24px;
     font-weight: 600;
@@ -71,14 +71,14 @@
   font-style: normal;
   letter-spacing: 0.78px;
 
-  @media (max-width: $vp-1366) {
+  @include vp-1200 {
     font-size: 24px;
     font-weight: 700;
     letter-spacing: 0.48px;
     line-height: normal;
   }
 
-  @media (max-width: $vp-768) {
+  @include vp-768 {
     font-size: 20px;
     font-weight: 600;
     letter-spacing: 0.4px;
