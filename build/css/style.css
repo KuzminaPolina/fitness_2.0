@@ -2672,20 +2672,117 @@ button,
   display: none;
 }
 
-.video__button {
+.video__button-group {
   width: 100px;
   height: 100px;
-  background: none;
+  padding: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
+}
+
+.video__button {
+  width: 72px;
+  height: 72px;
+  background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
   border: none;
+  border-radius: 50%;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   cursor: pointer;
-  padding: 0;
+  position: relative;
+  padding: 2px;
 }
 @media (max-width: 1199px) {
   .video__button {
+    width: 52px;
+    height: 52px;
+  }
+}
+
+.video__button::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: -14px;
+  left: -14px;
+  right: 0;
+  bottom: 0;
+  border-radius: 50px;
+  border: 2px solid transparent;
+  background: linear-gradient(151deg, rgba(237, 2, 51, 0.5) 0%, rgba(0, 62, 183, 0.5) 100%) border-box;
+  mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) padding-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
+  mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) padding-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+}
+@media (max-width: 1199px) {
+  .video__button::before {
     width: 73px;
     height: 73px;
-    padding: 0;
+    top: -11px;
+    left: -11px;
   }
+}
+
+.video__play-icon {
+  margin-left: 5px;
+  color: #ffffff;
+}
+@media (max-width: 1199px) {
+  .video__play-icon {
+    width: 10px;
+    height: 12px;
+  }
+}
+
+.video__button:hover,
+.video__button:active,
+.video__button:focus-visible {
+  background: #ffffff;
+  outline: none;
+}
+
+.video__button:hover > .video__play-icon,
+.video__button:active > .video__play-icon,
+.video__button:focus-visible > .video__play-icon {
+  color: #102654;
+  outline: none;
+}
+
+.video__button:hover::before,
+.video__button:active::before,
+.video__button:focus-visible::before {
+  background: #102654;
+  outline: none;
+}
+
+.video__button:disabled {
+  background: #ffffff;
+  opacity: 0.5;
+}
+
+.video__button:disabled::before {
+  background: #102654;
+  opacity: 0.5;
 }
 
 .catalog {
