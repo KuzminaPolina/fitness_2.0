@@ -9,7 +9,7 @@
   }
 
   @include vp-768 {
-    padding: 90px 15px;
+    padding: 60px 15px 75px;
     height: fit-content;
   }
 }
@@ -154,7 +154,7 @@
     width: 100%;
     margin-right: 0;
     margin: 0 auto;
-    margin-bottom: 35px;
+    margin-bottom: 32px;
   }
 
   @include vp-768 {

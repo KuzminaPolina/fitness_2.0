@@ -28,6 +28,7 @@ const initTrainersSlider = () =>
       1200: {
         slidesPerView: 4,
         slidesPerGroup: 4,
+        spaceBetween: 40,
       },
     },
   });

@@ -4,7 +4,7 @@
   padding: 120px 103px 53px;
 
   @include vp-1200 {
-    padding: 73px 45px 50px;
+    padding: 100px 45px 50px;
     position: relative;
   }
 
@@ -40,11 +40,11 @@
   flex-direction: column;
 
   @include vp-1366 {
-    padding: 45px;
+    padding: 50px 45px 45px;
   }
 
   @include vp-768 {
-    padding: 48px 44px;
+    padding: 50px 44px 45px;
   }
 }
 
@@ -54,14 +54,14 @@
   grid-template-rows: 79px 79px;
   column-gap: 50px;
   row-gap: 10px;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 
   @include vp-1200 {
     grid-template-columns: 117px 56px;
     grid-template-rows: 45px 45px;
     column-gap: 29px;
     row-gap: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
   }
 }
 
@@ -92,18 +92,39 @@
 
 .super-games__time {
   grid-column: 2 / 3;
+
+  @include vp-1200 {
+    padding-top: 2px;
+  }
 }
 
 .super-games__date-title {
   color: $color-default-white;
   font-family: $ff-secondary;
   font-size: 18px;
-  line-height: 27px;
+  line-height: 20px;
   margin: 0;
+  margin-bottom: 5px;
 
   @include vp-1200 {
     font-size: 12px;
-    line-height: 18px;
+    line-height: 13px;
+    margin-bottom: 3px;
+  }
+}
+
+.super-games__time-title {
+  color: $color-default-white;
+  font-family: $ff-secondary;
+  font-size: 18px;
+  line-height: 27px;
+  margin: 0;
+  margin-bottom: 5px;
+
+  @include vp-1200 {
+    font-size: 12px;
+    line-height: 15px;
+    margin-bottom: 2px;
   }
 }
 
@@ -136,7 +157,8 @@
 
   @include vp-1200 {
     font-size: 24px;
-    line-height: 36px;
+    line-height: 30px;
+    margin-right: 5px;
   }
 }
 
@@ -162,7 +184,7 @@
 
   @include vp-1200 {
     font-size: 24px;
-    line-height: 36px;
+    line-height: 30px;
   }
 }
 
@@ -172,7 +194,7 @@
   line-height: 27px;
   margin: 0;
   margin-bottom: auto;
-  margin-top: auto;
+  margin-top: 0;
   color: $color-default-white;
   max-width: 330px;
 
@@ -180,6 +202,10 @@
     font-size: 12px;
     line-height: 18px;
     margin-bottom: 25px;
+  }
+
+  @include vp-768 {
+    margin-bottom: 30px;
   }
 }
 
@@ -191,17 +217,17 @@
   letter-spacing: 0.6px;
   font-weight: 700;
   line-height: normal;
-  padding: 29px 110px;
+  padding: 26px 110px;
   border: solid 2px $color-default-white;
   cursor: pointer;
   color: $color-default-white;
-  margin-bottom: 0;
+  margin-bottom: 5px;
   margin-top: auto;
 
   @include vp-1200 {
     font-size: 10px;
     letter-spacing: 0.5px;
-    padding: 15px 50px;
+    padding: 12px 50px;
     line-height: normal;
   }
 }

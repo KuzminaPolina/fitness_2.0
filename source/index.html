@@ -247,6 +247,7 @@
                             <svg class="video__play-icon" width="13" height="15" aria-hidden="true" focusable="false">
                               <use xlink:href="./img/sprite.svg#play"></use>
                             </svg>
+                            <span class="visually-hidden">Кнопка воспроизведения</span>
                           </button>
                         </div>
                       </div>
@@ -399,26 +400,26 @@
         <section class="super-games">
           <div class="super-games__container">
             <div class="super-games__content">
-              <div class="super-games__info">
-                <div class="super-games__grid">
-                  <h2 class="super-games__header">Super Games</h2>
-                  <div class="super-games__date">
-                    <p class="super-games__date-title">Дата</p>
-                    <div class="super-games__underline-date">
-                      <div class="super-games__bignumber">7</div>
-                      <div class="super-games__monthyear">Марта<br>2019</div>
+                <div class="super-games__info">
+                  <div class="super-games__grid">
+                    <h2 class="super-games__header">Super Games</h2>
+                    <div class="super-games__date">
+                      <p class="super-games__date-title">Дата</p>
+                      <div class="super-games__underline-date">
+                        <div class="super-games__bignumber">7</div>
+                        <div class="super-games__monthyear">Марта<br>2019</div>
+                      </div>
+                    </div>
+                    <div class="super-games__time">
+                      <p class="super-games__time-title">Время</p>
+                      <div class="super-games__underline">
+                        <p class="super-games__date-time">12:00</p>
+                      </div>
                     </div>
                   </div>
-                  <div class="super-games__time">
-                    <p class="super-games__date-title">Время</p>
-                    <div class="super-games__underline">
-                      <p class="super-games__date-time">12:00</p>
-                    </div>
-                  </div>
+                  <p class="super-games__tagline">Ежегодные соревнования по&nbsp;CrossFit</p>
+                  <button class="super-games__button" type="button">Заполнить заявку</button>
                 </div>
-                <p class="super-games__tagline">Ежегодные соревнования по&nbsp;CrossFit</p>
-                <button class="super-games__button" type="button">Заполнить заявку</button>
-              </div>
               <div class="super-games__img">
                 <picture>
                   <source
@@ -610,7 +611,7 @@
         <section class="advantages">
           <h2 class="advantages__header">Наши преимущества</h2>
           <div class="advantages__content">
-            <div class="advantages__side">
+            <div class="advantages__side advantages__side--first">
               <div class="advantages__primary advantages__primary--space">
                 <div class="advantages__left">
                   <p class="advantages__number">900</p>
@@ -639,7 +640,7 @@
                 <p class="advantages__center-text">Современные тренажеры на&nbsp;все группы мышц</p>
               </div>
             </div>
-            <div class="advantages__side">
+            <div class="advantages__side advantages__side--second">
               <div class="advantages__primary advantages__primary--equipment">
                 <div class="advantages__left">
                   <p class="advantages__number">350</p>
@@ -1121,21 +1122,21 @@
             <div class="footer__social">
               <ul class="footer__social-list">
                 <li class="footer__social-item">
-                  <a class="footer__social-link" href="#" tabindex="0">
+                  <a class="footer__social-link" href="#" tabindex="0" aria-label="Ссылка на вконтакте">
                     <svg width="25" height="25" aria-hidden="true" focusable="false">
                       <use xlink:href="./img/sprite.svg#social-vk"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="footer__social-item">
-                  <a class="footer__social-link" href="#" tabindex="0">
+                  <a class="footer__social-link" href="#" tabindex="0" aria-label="Ссылка на одноклассники">
                     <svg width="25" height="25" aria-hidden="true" focusable="false">
                       <use xlink:href="./img/sprite.svg#social-ok"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="footer__social-item">
-                  <a class="footer__social-link" href="#" tabindex="0">
+                  <a class="footer__social-link" href="#" tabindex="0" aria-label="Ссылка на реддит">
                     <svg width="25" height="25" aria-hidden="true" focusable="false">
                       <use xlink:href="./img/sprite.svg#social-reddit"></use>
                     </svg>

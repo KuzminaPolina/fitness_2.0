@@ -4,11 +4,11 @@
   position: relative;
 
   @include vp-1200 {
-    padding: 115px 45px;
+    padding: 115px 45px 98px;
   }
 
   @include vp-768 {
-    padding: 70px 0;
+    padding: 70px 0 65px;
   }
 }
 
@@ -57,13 +57,13 @@
 
 .catalog__decoration {
   position: absolute;
-  bottom: -18%;
+  bottom: -8%;
   right: 0;
   width: 240px;
 
   @include vp-1200 {
     position: absolute;
-    bottom: -4.5%;
+    bottom: -3%;
     right: 0;
     width: 306px;
   }

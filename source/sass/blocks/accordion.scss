@@ -23,7 +23,7 @@
     cursor: pointer;
 
     @include vp-1200 {
-      height: 58px;
+      height: 45px;
     }
 
     @include focus {
@@ -44,22 +44,35 @@
   }
 
   &__element {
-    padding-top: 25px;
-    margin-bottom: 20px;
+    padding: 25px 0;
     border-top: solid 1px rgba(28, 51, 116, 0.2);
 
     @include vp-1200 {
-      padding-top: 15px;
+      padding: 25px 0 22px;
     }
 
     @include vp-768 {
-      padding-top: 25px;
+      padding-top: 23px;
+      padding-bottom: 15px;
       font-size: 16px;
     }
   }
 
+  &__element.is-active {
+    padding: 25px 0 12px;
+
+    @include vp-1200 {
+      padding: 21px 0 24px;
+    }
+
+    @include vp-768 {
+      padding: 0;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
+
   &__element:last-child {
-    padding-bottom: 25px;
     border-bottom: solid 1px rgba(28, 51, 116, 0.2);
     margin-bottom: 0;
   }
@@ -93,7 +106,8 @@
     max-width: 660px;
 
     @include vp-1200 {
-      padding: 0;
+      padding: 5px 0 0;
+      max-width: 665px;
     }
 
     @include vp-768 {
@@ -110,7 +124,7 @@
     font-style: normal;
 
     @include vp-1200 {
-      max-width: 560px;
+      max-width: 570px;
     }
 
     @include vp-768 {
@@ -133,7 +147,7 @@
   @include vp-768 {
     width: 32px;
     height: 32px;
-    top: 25%;
+    top: 35%;
   }
 }
 
@@ -176,11 +190,11 @@
   color: $color-default-blue;
 
   @include vp-1200 {
-    max-width: 537px;
+    max-width: 540px;
   }
 
   @include vp-768 {
     font-size: 18px;
-    max-width: 220px;
+    max-width: 240px;
   }
 }

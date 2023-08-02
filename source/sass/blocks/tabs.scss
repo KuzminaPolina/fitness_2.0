@@ -9,10 +9,16 @@
   border: none;
   border-bottom: solid 2px rgba(120, 120, 120, 0.2);
 
-  @media screen and (max-width: 767px) {
+  @include vp-1200 {
+    padding: 0 10px;
+  }
+
+  @include vp-768 {
     flex-wrap: wrap;
     margin-bottom: 35px;
+    padding: 0;
   }
+
 }
 
 .tabs__control {
@@ -127,7 +133,7 @@
   }
 
   @include vp-768 {
-    padding: 45px 35px;
+    padding: 45px 35px 50px;
   }
 }
 
@@ -135,7 +141,11 @@
   margin: 0;
 
   @include vp-1200 {
-    margin-bottom: 40px;
+    margin-bottom: 35px;
+  }
+
+  @include vp-768 {
+    margin-bottom: 35px;
   }
 }
 

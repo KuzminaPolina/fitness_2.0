@@ -3,12 +3,14 @@
   max-width: 1366px;
   margin: 0 auto;
   margin-top: -52px;
-  padding: 0 18px 50px 50px;
+  padding: 0 18px 50px 18px;
   justify-content: flex-start;
 
   @include vp-1366 {
     justify-content: center;
     margin-top: 0;
+    padding-right: 0;
+    padding-left: 0;
     padding-bottom: 82px;
     gap: 30px;
   }

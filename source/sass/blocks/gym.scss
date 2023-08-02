@@ -148,6 +148,7 @@
   margin: 0 auto;
 
   @include vp-1200 {
+    max-width: 100%;
     width: 678px;
     height: 345px;
   }

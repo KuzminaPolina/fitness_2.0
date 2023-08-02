@@ -11,13 +11,13 @@
   @include vp-1200 {
     font-size: 42px;
     letter-spacing: 1.26px;
-    margin-bottom: 40px;
+    margin-bottom: 43px;
   }
 
   @include vp-768 {
     font-size: 32px;
     letter-spacing: 0.96px;
-    margin-bottom: 10px;
+    margin-bottom: 16px;
   }
 }
 
@@ -41,7 +41,6 @@
 
   @include vp-768 {
     margin: 0;
-    margin-bottom: 10px;
   }
 }
 
@@ -81,7 +80,7 @@
   @include vp-768 {
     margin: 0;
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 8px;
   }
 }
 
@@ -128,6 +127,11 @@
   font-weight: 700;
   line-height: 71px;
   color: $color-default-white;
+
+  @include vp-1200 {
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+  }
 }
 
 .advantages__center-title {
@@ -142,6 +146,7 @@
     margin: 0;
     font-size: 20px;
     margin-bottom: 15px;
+    letter-spacing: 1px;
   }
 
   @include vp-768 {
@@ -155,11 +160,11 @@
   background-color: $color-background-ghost-white;
 
   @include vp-1200 {
-    padding: 100px 0;
+    padding: 90px 0 96px;
   }
 
   @include vp-768 {
-    padding: 70px 0 20px;
+    padding: 65px 0 40px;
   }
 }
 
@@ -188,23 +193,22 @@
 
   @include vp-1200 {
     justify-content: space-between;
-    column-gap: 60px;
+    column-gap: normal;
   }
 
   @include vp-768 {
     flex-direction: column;
-    padding: 0 15px;
-    column-gap: 0;
+    padding: 0 15px 20px;
   }
 }
 
 .advantages__side:not(:last-child) {
-  margin-bottom: 80px;
+  margin-bottom: 70px;
   padding-bottom: 80px;
   border-bottom: solid 2px rgba(209, 10, 66, 0.2);
 
   @include vp-1200 {
-    margin-bottom: 50px;
+    margin-bottom: 45px;
     padding-bottom: 0;
     border: none;
   }
@@ -218,15 +222,57 @@
   width: 360px;
   display: flex;
 
+  &--space {
+    padding-left: 40px;
+  }
+
+  &--equipment {
+    padding-left: 40px;
+  }
+
   @include vp-1200 {
     width: 100%;
+
+    &--space {
+      padding-left: 0;
+    }
+
+    &--equipment {
+      padding-left: 0;
+    }
+
+    &--parking {
+      padding-left: 20px;
+    }
+
+    &--experience {
+      padding-left: 20px;
+    }
   }
 
   @include vp-768 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 50px 0;
+    margin: 26px 0 0;
+
+    &--space {
+      padding: 0 40px;
+    }
+
+    &--equipment {
+      padding: 0 40px;
+      margin-top: 45px;
+    }
+
+    &--parking {
+      padding-left: 0;
+      padding-bottom: 40px;
+    }
+
+    &--experience {
+      padding-left: 0;
+    }
   }
 }
 
@@ -236,6 +282,7 @@
   background-color: $color-background-ghost-white;
   padding:  0 60px;
   max-width: 360px;
+  top: 5px;
 
   @include vp-1200 {
     position: static;
@@ -243,7 +290,7 @@
     max-width: 442px;
     width: 442px;
     background-color: $color-background-resolution-blue;
-    margin-bottom: 50px;
+    margin-bottom: 42px;
   }
 
   @include vp-768 {
@@ -264,7 +311,7 @@
 
   @include vp-1200 {
     padding: 0;
-    padding: 45px;
+    padding: 33px 45px 40px;
     margin: 0 auto;
   }
 
@@ -278,11 +325,10 @@
   margin-right: 30px;
 
   @include vp-1200 {
-    margin-right: 25px;
+    margin-right: 30px;
   }
 
   @include vp-768 {
     margin-right: 0;
   }
 }
-

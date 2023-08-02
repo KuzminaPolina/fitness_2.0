@@ -1,7 +1,9 @@
 .feedback {
+  padding: 0 300px;
+
   @include vp-1200 {
     width: 100%;
-    padding: 0 45px;
+    padding: 0 15px;
   }
 
   @include vp-768 {
@@ -10,19 +12,19 @@
 }
 
 .feedback__container {
-  width: 680px;
+  width: 725px;
   margin: 0 auto;
-  padding: 120px 80px;
+  padding: 120px 80px 118px;
   position: relative;
 
   @include vp-1200 {
     width: 100%;
-    padding: 90px 70px 95px;
+    padding: 90px 85px 99px;
   }
 
   @include vp-768 {
     width: 100%;
-    padding: 63px 15px;
+    padding: 0 15px 65px;
   }
 }
 
@@ -39,13 +41,13 @@
   @include vp-1200 {
     font-size: 42px;
     letter-spacing: 1.26px;
-    margin-bottom: 45px;
+    margin-bottom: 41px;
   }
 
   @include vp-768 {
     font-size: 32px;
     letter-spacing: 0.96px;
-    margin-bottom: 42px;
+    margin-bottom: 38px;
   }
 }
 
@@ -68,12 +70,13 @@
   padding: 0;
 
   @include vp-1200 {
-    top: 59%;
+    top: 57%;
   }
 
   @include vp-768 {
     width: 35px;
     height: 35px;
+    top: 52%;
   }
 }
 
@@ -137,14 +140,14 @@
 
 .feedback__wrapper {
   background-color: $color-resolution-blue;
-  padding: 62px 40px 56px;
+  padding: 62px 60px 56px 65px;
   display: grid;
   grid-template-columns: 80px 1fr;
   column-gap: 28px;
   color: $color-default-white;
 
   @include vp-768 {
-    padding: 40px 30px 0;
+    padding: 40px 25px 0;
     grid-template-columns: 68px 1fr;
     column-gap: 15px;
   }

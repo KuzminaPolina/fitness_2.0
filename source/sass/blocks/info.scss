@@ -45,11 +45,11 @@
 
   @include vp-1200 {
     max-width: 100%;
-    padding: 60px 160px 65px 103;
+    padding: 55px 0 70px 131px;
   }
 
   @include vp-768 {
-    padding: 60px 15px 65px;
+    padding: 55px 15px 65px;
     display: block;
   }
 }
@@ -60,7 +60,7 @@
 
   @include vp-1200 {
     max-width: 100%;
-    padding: 60px 0 65px 103px;
+    padding: 60px 0 65px 131px;
   }
 
   @include vp-768 {
@@ -81,6 +81,7 @@
     font-size: 42px;
     font-weight: 700;
     letter-spacing: 1.26px;
+    margin-bottom: 15px;
   }
 
   @include vp-768 {
@@ -125,13 +126,14 @@
   @include vp-1200 {
     justify-content: flex-start;
     gap: 60px;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
   }
 
   @include vp-768 {
     flex-direction: column;
     justify-content: flex-start;
-    margin-bottom: 40px;
+    margin-bottom: 38px;
+    gap: 23px;
   }
 }
 
@@ -157,6 +159,9 @@
   }
 }
 
+.info__input:not(:last-child) {
+  margin-bottom: 0;
+}
 /*-----------------------Contacts----------------------*/
 
 .info__columns {
