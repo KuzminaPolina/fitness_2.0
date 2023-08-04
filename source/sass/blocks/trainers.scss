@@ -42,7 +42,7 @@
   }
 
   @include vp-768 {
-    padding: 30px 47px 54px;
+    padding: 25px 47px 54px;
   }
 }
 
@@ -90,7 +90,8 @@
   @include vp-768 {
     width: 100%;
     min-width: 226px;
-    height: 273px;
+    height:fit-content;
+    aspect-ratio: 1/1.22;
     object-fit: fill;
   }
 }

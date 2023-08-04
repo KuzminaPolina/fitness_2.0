@@ -26,6 +26,10 @@
       height: 45px;
     }
 
+    @include vp-768 {
+      height: 32px;
+    }
+
     @include focus {
       outline: none;
 
@@ -147,7 +151,7 @@
   @include vp-768 {
     width: 32px;
     height: 32px;
-    top: 35%;
+    top: 0;
   }
 }
 

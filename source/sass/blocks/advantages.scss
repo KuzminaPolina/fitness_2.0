@@ -164,7 +164,7 @@
   }
 
   @include vp-768 {
-    padding: 65px 0 40px;
+    padding: 60px 0 40px;
   }
 }
 
@@ -254,7 +254,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 26px 0 0;
+    margin: 29px 0 0;
 
     &--space {
       padding: 0 40px;
@@ -267,7 +267,7 @@
 
     &--parking {
       padding-left: 0;
-      padding-bottom: 40px;
+      padding-bottom: 37px;
     }
 
     &--experience {

@@ -37,11 +37,15 @@
   padding-bottom: 45px;
   box-sizing: border-box;
 
-  @media (max-width: $vp-1200) {
+  @include vp-1200 {
     margin: 0;
     margin-top: 50px;
     max-width: 324px;
     padding: 0;
+  }
+
+  @include vp-768 {
+    margin-top: 50px;
   }
 }
 
@@ -67,6 +71,7 @@
   @media (max-width: $vp-768) {
     font-size: 28px;
     letter-spacing: 0.84px;
+    margin-bottom: 2px;
   }
 }
 
@@ -123,8 +128,8 @@
   }
 
   @media (max-width: $vp-768) {
-    margin-top: 80px;
-    margin-right: -10px;
+    margin-top: 78px;
+    margin-right: -9px;
   }
 }
 

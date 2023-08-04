@@ -2222,6 +2222,11 @@ button,
     padding: 0;
   }
 }
+@media (max-width: 767px) {
+  .hero__column-text {
+    margin-top: 50px;
+  }
+}
 
 .hero__location {
   font-family: "Alumni Sans", "Arial", sans-serif;
@@ -2247,6 +2252,7 @@ button,
   .hero__location {
     font-size: 28px;
     letter-spacing: 0.84px;
+    margin-bottom: 2px;
   }
 }
 
@@ -2310,8 +2316,8 @@ button,
 }
 @media (max-width: 767px) {
   .hero__list {
-    margin-top: 80px;
-    margin-right: -10px;
+    margin-top: 78px;
+    margin-right: -9px;
   }
 }
 
@@ -3744,7 +3750,7 @@ button,
 }
 @media (max-width: 767px) {
   .advantages {
-    padding: 65px 0 40px;
+    padding: 60px 0 40px;
   }
 }
 
@@ -3865,7 +3871,7 @@ button,
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: 26px 0 0;
+    margin: 29px 0 0;
   }
   .advantages__primary--space {
     padding: 0 40px;
@@ -3876,7 +3882,7 @@ button,
   }
   .advantages__primary--parking {
     padding-left: 0;
-    padding-bottom: 40px;
+    padding-bottom: 37px;
   }
   .advantages__primary--experience {
     padding-left: 0;
@@ -4007,7 +4013,7 @@ button,
 }
 @media (max-width: 767px) {
   .trainers__container {
-    padding: 30px 47px 54px;
+    padding: 25px 47px 54px;
   }
 }
 
@@ -4058,7 +4064,10 @@ button,
   .trainers__image picture img {
     width: 100%;
     min-width: 226px;
-    height: 273px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    aspect-ratio: 1/1.22;
     -o-object-fit: fill;
        object-fit: fill;
   }
@@ -4891,6 +4900,11 @@ button,
     height: 45px;
   }
 }
+@media (max-width: 767px) {
+  .accordion__button {
+    height: 32px;
+  }
+}
 .accordion__button.focus-visible:focus {
   outline: none;
 }
@@ -5005,7 +5019,7 @@ button,
   .accordion__button-icon {
     width: 32px;
     height: 32px;
-    top: 35%;
+    top: 0;
   }
 }
 
