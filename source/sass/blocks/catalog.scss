@@ -2,13 +2,14 @@
   background: $color-background-ghost-white;
   padding: 140px 0 120px;
   position: relative;
+  scroll-behavior: smooth;
 
   @include vp-1200 {
     padding: 115px 45px 98px;
   }
 
   @include vp-768 {
-    padding: 70px 0 65px;
+    padding: 70px 0 69px;
   }
 }
 
@@ -51,7 +52,7 @@
   @include vp-768 {
     font-size: 32px;
     letter-spacing: 0.96px;
-    margin-bottom: 27px;
+    margin-bottom: 29px;
   }
 }
 

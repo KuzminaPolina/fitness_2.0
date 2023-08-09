@@ -2,17 +2,17 @@
   position: absolute;
   width: 364px;
   top: 288px;
-  left: -10%;
+  left: -9.5%;
 
   @include vp-1366 {
-    left: -2%;
+    left: -2.5%;
   }
 
   @include vp-1200 {
     width: 266px;
     position: absolute;
     top: 75%;
-    left: 30%;
+    left: 30.5%;
   }
 
   @media (max-width: $vp-768) {

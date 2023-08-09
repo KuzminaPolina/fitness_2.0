@@ -74,3 +74,7 @@
 .swiper-button-next::after {
   display: none;
 }
+
+html {
+  scroll-behavior: smooth;
+}

@@ -166,6 +166,7 @@
   border: solid 4px $color-default-white;
   padding: 20px 55px;
   text-align: center;
+  scroll-behavior: smooth;
 
   @media (max-width: $vp-1200) {
     padding: 20px 30px;
@@ -174,6 +175,26 @@
   @include vp-768 {
     width: 100%;
   }
+}
+
+.hero__button:hover {
+  background-color: $color-default-white;
+  color: $color-egyptian-blue;
+}
+
+.hero__button:active {
+  background-color: $color-default-white;
+  color: $color-default-blue;
+}
+
+.hero__button:focus-visible {
+  outline: none;
+  background-color: $color-default-white;
+  color: $color-egyptian-blue;
+}
+
+.hero__button:disabled {
+  opacity: 0.5;
 }
 
 .hero__item {

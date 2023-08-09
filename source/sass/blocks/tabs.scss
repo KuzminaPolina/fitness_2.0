@@ -1,6 +1,6 @@
 .tabs__controls {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   max-width: 350px;
   margin: 0 auto;
   width: 100%;
@@ -8,6 +8,7 @@
   background: none;
   border: none;
   border-bottom: solid 2px rgba(120, 120, 120, 0.2);
+  flex-wrap: wrap;
 
   @include vp-1200 {
     padding: 0 10px;
@@ -15,7 +16,7 @@
 
   @include vp-768 {
     flex-wrap: wrap;
-    margin-bottom: 35px;
+    margin-bottom: 34px;
     padding: 0;
   }
 
@@ -41,6 +42,7 @@
   @include vp-768 {
     font-size: 16px;
     line-height: 24px;
+    padding-bottom: 12px;
   }
 
   &.is-active {
@@ -108,7 +110,7 @@
   }
 
   @include vp-768 {
-    width: 290px;
+    width: 100%;
   }
 }
 
@@ -133,7 +135,8 @@
   }
 
   @include vp-768 {
-    padding: 45px 35px 50px;
+    padding: 44px 35px 48px;
+    margin: 0 auto;
   }
 }
 
@@ -166,6 +169,7 @@
   @include vp-768 {
     font-size: 22px;
     line-height: 110%;
+    margin-bottom: 8px;
   }
 }
 
@@ -178,7 +182,7 @@
   margin-bottom: 73px;
 
   @include vp-768 {
-    margin-bottom: 10px;
+    margin-bottom: 11px;
   }
 }
 
@@ -215,7 +219,7 @@
   @include vp-768 {
     margin-top: -85px;
     font-size: 48px;
-    margin-bottom: 24px;
+    margin-bottom: 23px;
   }
 }
 
@@ -232,9 +236,9 @@
   letter-spacing: 0.6px;
   font-weight: 700;
   line-height: normal;
-  padding: 24px 43px;
+  padding: 24px 42px;
+  border: solid 2px $color-default-white;
   outline: solid 2px $color-default-blue;
-  border: none;
   cursor: pointer;
   text-align: center;
 
@@ -244,10 +248,22 @@
   }
 }
 
-.tabs__button:hover,
+.tabs__button:hover {
+  background: $gradient-button-torch-red-to-cobalt;
+  outline: none;
+  color: $color-default-white;
+  cursor: pointer;
+}
+
+.tabs__button:active {
+  background: $gradient-button-torch-red-to-cobalt;
+  cursor: pointer;
+  outline: solid 2px $color-default-blue;
+  color: rgba(255, 255, 255, 0.7);
+}
+
 .tabs__button:focus-visible {
   background: $gradient-button-torch-red-to-cobalt;
-  border: none;
   outline: none;
   color: $color-default-white;
   cursor: pointer;

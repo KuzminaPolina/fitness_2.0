@@ -50,7 +50,8 @@
       }
 
       &:hover {
-        border-bottom: solid 1px $color-default-white;
+        border-bottom: solid 2px $color-default-white;
+        padding: 10px 0;
       }
 
       &:focus {
@@ -95,6 +96,10 @@
 
     transition: opacity 0.3s ease;
 
+    &::placeholder{
+      color: $color-error;
+    }
+
     @media screen and (max-width: 767px) {
       bottom: 20px;
     }
@@ -103,22 +108,22 @@
   &.is-invalid {
     input,
     textarea {
-      border: 1px solid $color-error;
+      border-bottom: 1px solid $color-error;
 
       &:focus,
       &:hover {
-        border: 1px solid $color-error;
+        border-bottom: 1px solid $color-error;
       }
     }
   }
 
   &.is-valid {
     input {
-      border: 1px solid #22b259;
+      border: 1px solid $color-default-white;
 
       &:focus,
       &:hover {
-        border: 1px solid rgba(#22b259, 0.5);
+        border: 1px solid r$color-default-white;
       }
     }
   }

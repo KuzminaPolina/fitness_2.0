@@ -14,7 +14,7 @@
 .feedback__container {
   width: 725px;
   margin: 0 auto;
-  padding: 120px 80px 118px;
+  padding: 120px 80px 120px;
   position: relative;
 
   @include vp-1200 {
@@ -24,7 +24,7 @@
 
   @include vp-768 {
     width: 100%;
-    padding: 0 15px 65px;
+    padding: 63px 15px 71px;
   }
 }
 
@@ -47,7 +47,7 @@
   @include vp-768 {
     font-size: 32px;
     letter-spacing: 0.96px;
-    margin-bottom: 38px;
+    margin-bottom: 40px;
   }
 }
 
@@ -76,7 +76,7 @@
   @include vp-768 {
     width: 35px;
     height: 35px;
-    top: 52%;
+    top: 57.5%;
   }
 }
 
@@ -150,6 +150,7 @@
     padding: 40px 25px 0;
     grid-template-columns: 68px 1fr;
     column-gap: 15px;
+    max-height: 335px;
   }
 }
 
@@ -168,7 +169,7 @@
 
 .feedback__image picture img {
   @include vp-768 {
-    transform: translateX(13px);
+    transform: translateX(18px);
   }
 }
 
@@ -180,9 +181,16 @@
   line-height: 20px;
   margin-bottom: 15px;
 
+  @include vp-1200 {
+    margin-top: 0;
+  }
+
   @include vp-768 {
-    transform: translate(95px, -55px);
+    transform: translate(100px, -57px);
     max-width: 62px;
+    line-height: 25px;
+    margin: 0;
+    margin-bottom: 8px;
   }
 }
 
