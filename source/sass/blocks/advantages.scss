@@ -167,6 +167,9 @@
 .advantages {
   padding: 108px 0 123px;
   background-color: $color-background-ghost-white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   @include vp-1200 {
     padding: 90px 0 96px;
