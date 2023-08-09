@@ -92,7 +92,16 @@
               class="header__logo"
               href="index.html"
               aria-label="Supergym – самый большой фитнес центр за Уралом."
-              >SUPERGYM
+              >
+              <svg class="header__logo-desktop" width="122" height="44" aria-hidden="true" focusable="false">
+                <use xlink:href="./img/sprite.svg#logo"></use>
+              </svg>
+              <svg class="header__logo-tablet" width="82" height="27" aria-hidden="true" focusable="false">
+                <use xlink:href="./img/sprite.svg#logo"></use>
+              </svg>
+              <svg class="header__logo-mobile" width="68" height="23" aria-hidden="true" focusable="false">
+                <use xlink:href="./img/sprite.svg#logo"></use>
+              </svg>
             </a>
             <a class="header__phone-number" href="tel:+78005555555"
               >8-800-555-55-55</a
@@ -247,6 +256,7 @@
                             <svg class="video__play-icon" width="13" height="15" aria-hidden="true" focusable="false">
                               <use xlink:href="./img/sprite.svg#play"></use>
                             </svg>
+                            <span class="visually-hidden">Кнопка воспроизведения</span>
                           </button>
                         </div>
                       </div>
@@ -394,31 +404,31 @@
                   alt="#"
                 >
               </picture>
-            </div>
+          </div>
         </section>
         <section class="super-games">
           <div class="super-games__container">
             <div class="super-games__content">
-              <div class="super-games__info">
-                <div class="super-games__grid">
-                  <h2 class="super-games__header">Super Games</h2>
-                  <div class="super-games__date">
-                    <p class="super-games__date-title">Дата</p>
-                    <div class="super-games__underline-date">
-                      <div class="super-games__bignumber">7</div>
-                      <div class="super-games__monthyear">Марта<br>2019</div>
+                <div class="super-games__info">
+                  <div class="super-games__grid">
+                    <h2 class="super-games__header">Super Games</h2>
+                    <div class="super-games__date">
+                      <p class="super-games__date-title">Дата</p>
+                      <div class="super-games__underline-date">
+                        <div class="super-games__bignumber">7</div>
+                        <div class="super-games__monthyear">Марта<br>2019</div>
+                      </div>
+                    </div>
+                    <div class="super-games__time">
+                      <p class="super-games__time-title">Время</p>
+                      <div class="super-games__underline">
+                        <p class="super-games__date-time">12:00</p>
+                      </div>
                     </div>
                   </div>
-                  <div class="super-games__time">
-                    <p class="super-games__date-title">Время</p>
-                    <div class="super-games__underline">
-                      <p class="super-games__date-time">12:00</p>
-                    </div>
-                  </div>
+                  <p class="super-games__tagline">Ежегодные соревнования по&nbsp;CrossFit</p>
+                  <button class="super-games__button" type="button">Заполнить заявку</button>
                 </div>
-                <p class="super-games__tagline">Ежегодные соревнования по&nbsp;CrossFit</p>
-                <button class="super-games__button" type="button">Заполнить заявку</button>
-              </div>
               <div class="super-games__img">
                 <picture>
                   <source
@@ -476,7 +486,7 @@
               <h2 class="trainers__header">Тренеры</h2>
               <div class="trainers__content swiper">
                 <ul class="trainers__list swiper-wrapper">
-                  <li class="trainers__item swiper-slide">
+                  <li class="trainers__item swiper-slide" tabindex="0">
                     <div class="trainers__image">
                       <picture>
                         <source
@@ -506,7 +516,7 @@
                       </ul>
                     </div>
                   </li>
-                  <li class="trainers__item swiper-slide">
+                  <li class="trainers__item swiper-slide" tabindex="0">
                     <div class="trainers__image">
                       <picture>
                         <source
@@ -536,7 +546,7 @@
                       </ul>
                     </div>
                   </li>
-                  <li class="trainers__item swiper-slide">
+                  <li class="trainers__item swiper-slide" tabindex="0">
                     <div class="trainers__image">
                       <picture>
                         <source
@@ -566,7 +576,7 @@
                       </ul>
                     </div>
                   </li>
-                  <li class="trainers__item swiper-slide">
+                  <li class="trainers__item swiper-slide" tabindex="0">
                     <div class="trainers__image">
                       <picture>
                         <source
@@ -609,59 +619,55 @@
         </section>
         <section class="advantages">
           <h2 class="advantages__header">Наши преимущества</h2>
-          <div class="advantages__content">
-            <div class="advantages__side">
-              <div class="advantages__primary advantages__primary--space">
-                <div class="advantages__left">
-                  <p class="advantages__number">900</p>
-                  <p class="advantages__tagline">кв/м</p>
-                </div>
-                <div class="advantages__right">
-                  <p class="advantages__title">Площадь</p>
-                  <p class="advantages__text">Занимайтесь без очередей и&nbsp;толкучки</p>
-                </div>
+          <ul class="advantages__content">
+            <li class="advantages__item">
+              <div class="advantages__left">
+                <p class="advantages__number">900</p>
+                <p class="advantages__tagline">кв/м</p>
               </div>
-              <div class="advantages__primary advantages__primary--parking">
-                <div class="advantages__left">
-                  <p class="advantages__number">70</p>
-                  <p class="advantages__tagline">машин</p>
-                </div>
-                <div class="advantages__right">
-                  <p class="advantages__title">Собственная парковка</p>
-                  <p class="advantages__text">Вы&nbsp;всегда найдете место для своей машины на&nbsp;нашей парковке</p>
-                </div>
+              <div class="advantages__right">
+                <p class="advantages__title">Площадь</p>
+                <p class="advantages__text">Занимайтесь без очередей и&nbsp;толкучки</p>
               </div>
-            </div>
-            <div class="advantages__center">
+            </li>
+            <li class="advantages__item">
+              <div class="advantages__left">
+                <p class="advantages__number">70</p>
+                <p class="advantages__tagline">машин</p>
+              </div>
+              <div class="advantages__right">
+                <p class="advantages__title">Собственная парковка</p>
+                <p class="advantages__text">Вы&nbsp;всегда найдете место для своей машины на&nbsp;нашей парковке</p>
+              </div>
+            </li>
+            <li class="advantages__item">
               <div class="advantages__center-content">
                 <p class="advantages__center-number">100</p>
                 <p class="advantages__center-title">Тренажеров</p>
                 <p class="advantages__center-text">Современные тренажеры на&nbsp;все группы мышц</p>
               </div>
-            </div>
-            <div class="advantages__side">
-              <div class="advantages__primary advantages__primary--equipment">
-                <div class="advantages__left">
-                  <p class="advantages__number">350</p>
-                  <p class="advantages__tagline">мест</p>
-                </div>
-                <div class="advantages__right">
-                  <p class="advantages__title">Комфорт</p>
-                  <p class="advantages__text">Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
-                </div>
+            </li>
+            <li class="advantages__item">
+              <div class="advantages__left">
+                <p class="advantages__number">350</p>
+                <p class="advantages__tagline">мест</p>
               </div>
-              <div class="advantages__primary advantages__primary--experience">
-                <div class="advantages__left">
-                  <p class="advantages__number">5+</p>
-                  <p class="advantages__tagline">лет</p>
-                </div>
-                <div class="advantages__right">
-                  <p class="advantages__title">Тренерский опыт</p>
-                  <p class="advantages__text">Добивайтесь своих целей быстрее с&nbsp;профессиональным тренером</p>
-                </div>
+              <div class="advantages__right">
+                <p class="advantages__title">Комфорт</p>
+                <p class="advantages__text">Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
               </div>
-            </div>
-          </div>
+            </li>
+            <li class="advantages__item">
+              <div class="advantages__left">
+                <p class="advantages__number">5+</p>
+                <p class="advantages__tagline">лет</p>
+              </div>
+              <div class="advantages__right">
+                <p class="advantages__title">Тренерский опыт</p>
+                <p class="advantages__text">Добивайтесь своих целей быстрее с&nbsp;профессиональным тренером</p>
+              </div>
+            </li>
+          </ul>
         </section>
         <section class="promo">
           <div class="promo__container">
@@ -742,7 +748,7 @@
         <section class="faq">
           <div class="faq__container">
             <h2 class="faq__header">Вопросы и ответы</h2>
-            <div class="faq__tabs tabs no-transition-global" data-tabs="parent" data-delay="300" data-height="max">
+            <div class="faq__tabs tabs no-transition-global" data-tabs="parent" data-delay="300">
               <div class="faq__tabs-controls" data-tabs="controls">
                 <button class="faq__tabs-control" type="button" data-tabs="control">Центр</button>
                 <button class="faq__tabs-control" type="button" data-tabs="control">Абонемент</button>
@@ -753,7 +759,7 @@
                 <div class="faq__tabs-element" data-tabs="element">
                   <div class="accordion" data-accordion="parent" data-single="data-single">
                     <div class="accordion__element is-active" data-accordion="element">
-                      <button class="accordion__button" type="button" data-accordion="button">
+                      <button class="accordion__button" type="button" data-accordion="button" tabindex="0">
                         <span class="accordion__button-text">Как стать членом фитнес-центра?</span>
                         <span class="accordion__button-icon"></span>
                       </button>
@@ -764,7 +770,7 @@
                       </div>
                     </div>
                     <div class="accordion__element" data-accordion="element">
-                      <button class="accordion__button" type="button" data-accordion="button">
+                      <button class="accordion__button" type="button" data-accordion="button" tabindex="0">
                         <span class="accordion__button-text">Где можно посмотреть расписание?</span>
                         <span class="accordion__button-icon"></span>
                       </button>
@@ -775,7 +781,7 @@
                       </div>
                     </div>
                     <div class="accordion__element" data-accordion="element">
-                      <button class="accordion__button" type="button" data-accordion="button">
+                      <button class="accordion__button" type="button" data-accordion="button" tabindex="0">
                         <span class="accordion__button-text">Есть кулеры в&nbsp;центре? Предоставляются полотенца?</span>
                         <span class="accordion__button-icon"></span>
                       </button>
@@ -786,7 +792,7 @@
                       </div>
                     </div>
                     <div class="accordion__element" data-accordion="element">
-                      <button class="accordion__button" type="button" data-accordion="button">
+                      <button class="accordion__button" type="button" data-accordion="button" tabindex="0">
                         <span class="accordion__button-text">Сколько тренеров работает в&nbsp;клубе и&nbsp;какова их&nbsp;квалификация?</span>
                         <span class="accordion__button-icon"></span>
                       </button>
@@ -801,7 +807,7 @@
                 <div class="faq__tabs-element" data-tabs="element">
                   <div class="accordion" data-accordion="parent" data-single="data-single">
                     <div class="accordion__element is-active" data-accordion="element">
-                      <button class="accordion__button btn btn--aquamarine" type="button" data-accordion="button">
+                      <button class="accordion__button btn btn--aquamarine" type="button" data-accordion="button" tabindex="0">
                         <span class="accordion__button-text">Занятия с&nbsp;тренером входят в&nbsp;абонемент?</span>
                         <span class="accordion__button-icon"></span>
                       </button>
@@ -812,7 +818,7 @@
                       </div>
                     </div>
                     <div class="accordion__element" data-accordion="element">
-                      <button class="accordion__button accordion__button btn btn--aquamarine" type="button" data-accordion="button">
+                      <button class="accordion__button accordion__button btn btn--aquamarine" type="button" data-accordion="button" tabindex="0">
                         <span class="accordion__button-text">Можно&nbsp;ли заморозить абонемент?</span>
                         <span class="accordion__button-icon"></span>
                       </button>
@@ -823,7 +829,7 @@
                       </div>
                     </div>
                     <div class="accordion__element" data-accordion="element">
-                      <button class="accordion__button btn btn--aquamarine" type="button" data-accordion="button">
+                      <button class="accordion__button btn btn--aquamarine" type="button" data-accordion="button" tabindex="0">
                         <span class="accordion__button-text">Есть&nbsp;ли лимит по&nbsp;посещениям тренажерного зала и&nbsp;групповых занятий?</span>
                         <span class="accordion__button-icon"></span>
                       </button>
@@ -834,7 +840,7 @@
                       </div>
                     </div>
                     <div class="accordion__element" data-accordion="element">
-                      <button class="accordion__button btn btn--aquamarine" type="button" data-accordion="button">
+                      <button class="accordion__button btn btn--aquamarine" type="button" data-accordion="button" tabindex="0">
                         <span class="accordion__button-text">Что такое семейный доступ и&nbsp;доступ для друзей?</span>
                         <span class="accordion__button-icon"></span>
                       </button>
@@ -849,7 +855,7 @@
                 <div class="faq__tabs-element" data-tabs="element">
                   <div class="accordion" data-accordion="parent" data-single="data-single">
                     <div class="accordion__element is-active" data-accordion="element">
-                      <button class="accordion__button btn btn--aquamarine" type="button" data-accordion="button">
+                      <button class="accordion__button btn btn--aquamarine" type="button" data-accordion="button" tabindex="0">
                         <span class="accordion__button-text">Предлагает&nbsp;ли клуб услуги по&nbsp;консультированию по&nbsp;вопросам питания?</span>
                         <span class="accordion__button-icon"></span>
                       </button>
@@ -860,7 +866,7 @@
                       </div>
                     </div>
                     <div class="accordion__element" data-accordion="element">
-                      <button class="accordion__button accordion__button btn btn--aquamarine" type="button" data-accordion="button">
+                      <button class="accordion__button accordion__button btn btn--aquamarine" type="button" data-accordion="button" tabindex="0">
                         <span class="accordion__button-text">Проводятся&nbsp;ли в&nbsp;клубе какие-либо мероприятия или соревнования?</span>
                         <span class="accordion__button-icon"></span>
                       </button>
@@ -871,7 +877,7 @@
                       </div>
                     </div>
                     <div class="accordion__element" data-accordion="element">
-                      <button class="accordion__button btn btn--aquamarine" type="button" data-accordion="button">
+                      <button class="accordion__button btn btn--aquamarine" type="button" data-accordion="button" tabindex="0">
                         <span class="accordion__button-text">Можно&nbsp;ли приобрести в&nbsp;центре спортивное питание?</span>
                         <span class="accordion__button-icon"></span>
                       </button>
@@ -882,7 +888,7 @@
                       </div>
                     </div>
                     <div class="accordion__element" data-accordion="element">
-                      <button class="accordion__button btn btn--aquamarine" type="button" data-accordion="button">
+                      <button class="accordion__button btn btn--aquamarine" type="button" data-accordion="button" tabindex="0">
                         <span class="accordion__button-text">Есть&nbsp;ли в&nbsp;центре детская комната?</span>
                         <span class="accordion__button-icon"></span>
                       </button>
@@ -897,7 +903,7 @@
                 <div class="faq__tabs-element" data-tabs="element">
                   <div class="accordion" data-accordion="parent" data-single="data-single">
                     <div class="accordion__element is-active" data-accordion="element">
-                      <button class="accordion__button btn btn--aquamarine" type="button" data-accordion="button">
+                      <button class="accordion__button btn btn--aquamarine" type="button" data-accordion="button" tabindex="0">
                         <span class="accordion__button-text">Есть в&nbsp;фитнес-центре дресс-код?</span>
                         <span class="accordion__button-icon"></span>
                       </button>
@@ -908,7 +914,7 @@
                       </div>
                     </div>
                     <div class="accordion__element" data-accordion="element">
-                      <button class="accordion__button accordion__button btn btn--aquamarine" type="button" data-accordion="button">
+                      <button class="accordion__button accordion__button btn btn--aquamarine" type="button" data-accordion="button" tabindex="0">
                         <span class="accordion__button-text">Можно&nbsp;ли приводить с&nbsp;собой детей на&nbsp;тренировки?</span>
                         <span class="accordion__button-icon"></span>
                       </button>
@@ -919,7 +925,7 @@
                       </div>
                     </div>
                     <div class="accordion__element" data-accordion="element">
-                      <button class="accordion__button btn btn--aquamarine" type="button" data-accordion="button">
+                      <button class="accordion__button btn btn--aquamarine" type="button" data-accordion="button" tabindex="0">
                         <span class="accordion__button-text">Какие дополнительные правила посещения центра?</span>
                         <span class="accordion__button-icon"></span>
                       </button>
@@ -930,7 +936,7 @@
                       </div>
                     </div>
                     <div class="accordion__element" data-accordion="element">
-                      <button class="accordion__button btn btn--aquamarine" type="button" data-accordion="button">
+                      <button class="accordion__button btn btn--aquamarine" type="button" data-accordion="button" tabindex="0">
                         <span class="accordion__button-text">Нужна&nbsp;ли медицинская справка для посещения залов и&nbsp;бассейна?</span>
                         <span class="accordion__button-icon"></span>
                       </button>
@@ -1084,8 +1090,8 @@
                 <div class="info__column">
                   <p class="info__column-header">Телефон:</p>
                   <p class="info__column-text"><a href="tel:+78005555555">8-800-555-55-55</a></p>
-                  <p class="info__column-header">E-mail:</p>
-                  <p class="info__column-text">omsk@supergym.ru</p>
+                  <p class="info__column-header">Email:</p>
+                  <p class="info__column-text"><a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a></p>
                 </div>
               </div>
             </div>
@@ -1096,46 +1102,55 @@
         <div class="container">
           <nav class="footer__nav">
             <a
-              class="footer__logo"
+              class="footer__logo-link"
               href="index.html"
               aria-label="Supergym – самый большой фитнес центр за Уралом."
-              >SUPERGYM
+              >
+              <svg class="logo__desktop-icon" width="87" height="25" aria-hidden="true" focusable="false">
+                <use xlink:href="./img/sprite.svg#logo"></use>
+              </svg>
+              <svg class="logo__tablet-icon" width="82" height="18" aria-hidden="true" focusable="false">
+                <use xlink:href="./img/sprite.svg#logo"></use>
+              </svg>
+              <svg class="logo__mobile-icon" width="68" height="15" aria-hidden="true" focusable="false">
+                <use xlink:href="./img/sprite.svg#logo"></use>
+              </svg>
             </a>
             <ul class="footer__list">
               <li class="footer__item">
-                <a class="footer__link" tabindex="0">Услуги</a>
+                <a class="footer__link" href="#" tabindex="0">Услуги</a>
               </li>
               <li class="footer__item">
-                <a class="footer__link" tabindex="0">Абонементы</a>
+                <a class="footer__link" href="#" tabindex="0">Абонементы</a>
               </li>
               <li class="footer__item">
-                <a class="footer__link" tabindex="0">Акции</a>
+                <a class="footer__link" href="#" tabindex="0">Акции</a>
               </li>
               <li class="footer__item">
-                <a class="footer__link" tabindex="0">Тренеры</a>
+                <a class="footer__link" href="#" tabindex="0">Тренеры</a>
               </li>
               <li class="footer__item">
-                <a class="footer__link" tabindex="0">Расписание</a>
+                <a class="footer__link" href="#" tabindex="0">Расписание</a>
               </li>
             </ul>
             <div class="footer__social">
               <ul class="footer__social-list">
                 <li class="footer__social-item">
-                  <a class="footer__social-link" href="#" tabindex="0">
+                  <a class="footer__social-link" href="#" tabindex="0" aria-label="Ссылка на вконтакте">
                     <svg width="25" height="25" aria-hidden="true" focusable="false">
                       <use xlink:href="./img/sprite.svg#social-vk"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="footer__social-item">
-                  <a class="footer__social-link" href="#" tabindex="0">
+                  <a class="footer__social-link" href="#" tabindex="0" aria-label="Ссылка на одноклассники">
                     <svg width="25" height="25" aria-hidden="true" focusable="false">
                       <use xlink:href="./img/sprite.svg#social-ok"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="footer__social-item">
-                  <a class="footer__social-link" href="#" tabindex="0">
+                  <a class="footer__social-link" href="#" tabindex="0" aria-label="Ссылка на реддит">
                     <svg width="25" height="25" aria-hidden="true" focusable="false">
                       <use xlink:href="./img/sprite.svg#social-reddit"></use>
                     </svg>
