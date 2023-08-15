@@ -62,6 +62,13 @@
       type="font/woff2"
       crossorigin
     >
+    <link
+      rel="preload"
+      href="fonts/rouble.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    >
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <link
       rel="icon"
@@ -269,7 +276,7 @@
         <section class="catalog" id="catalog">
           <div class="catalog__container">
             <h2 class="catalog__header">Абонементы</h2>
-            <div class="catalog__tabs tabs no-transition-global" data-tabs="parent" data-delay="300" data-height="max">
+            <div class="catalog__tabs tabs no-transition-global" data-tabs="parent" data-delay="300">
               <div class="tabs__controls" data-tabs="controls">
                 <button class="tabs__control" type="button" data-tabs="control">1 месяц</button>
                 <button class="tabs__control" type="button" data-tabs="control">6 месяцев</button>
@@ -283,7 +290,15 @@
                         <p class="tabs__header">С тренером</p>
                         <p class="tabs__tagline">12 занятий</p>
                         <p class="tabs__price-shadow">5000</p>
-                        <p class="tabs__price">5000 <span class="tabs__rub">₽</span></p>
+                        <p class="tabs__price">5000
+                          <span class="tabs__rub">
+                            <svg class="tabs__rub-icon-big" width="30" height="42" aria-hidden="true" focusable="false">
+                              <use xlink:href="./img/sprite.svg#rub"></use>
+                            </svg>
+                            <svg class="tabs__rub-icon-small" width="24" height="33" aria-hidden="true" focusable="false">
+                              <use xlink:href="./img/sprite.svg#rub"></use>
+                            </svg>
+                          </span></p>
                         <a href="#" class="tabs__button">Купить абонемент</a>
                       </div>
                     </div>
@@ -292,7 +307,12 @@
                         <p class="tabs__header">Дневной</p>
                         <p class="tabs__tagline">с 8:00 до 17:00</p>
                         <p class="tabs__price-shadow">1700</p>
-                        <p class="tabs__price">1700 <span class="tabs__rub">₽</span></p>
+                        <p class="tabs__price">1700 <span class="tabs__rub"><svg class="tabs__rub-icon-big" width="30" height="42" aria-hidden="true" focusable="false">
+                          <use xlink:href="./img/sprite.svg#rub"></use>
+                        </svg>
+                        <svg class="tabs__rub-icon-small" width="24" height="33" aria-hidden="true" focusable="false">
+                          <use xlink:href="./img/sprite.svg#rub"></use>
+                        </svg></span></p>
                         <a href="#" class="tabs__button">Купить абонемент</a>
                       </div>
                     </div>
@@ -301,7 +321,12 @@
                         <p class="tabs__header">Полный день</p>
                         <p class="tabs__tagline">с 8:00 до 22:00</p>
                         <p class="tabs__price-shadow">2700</p>
-                        <p class="tabs__price">2700 <span class="tabs__rub">₽</span></p>
+                        <p class="tabs__price">2700 <span class="tabs__rub"><svg class="tabs__rub-icon-big" width="30" height="42" aria-hidden="true" focusable="false">
+                          <use xlink:href="./img/sprite.svg#rub"></use>
+                        </svg>
+                        <svg class="tabs__rub-icon-small" width="24" height="33" aria-hidden="true" focusable="false">
+                          <use xlink:href="./img/sprite.svg#rub"></use>
+                        </svg></span></p>
                         <a href="#" class="tabs__button">Купить абонемент</a>
                       </div>
                     </div>
@@ -314,7 +339,12 @@
                         <p class="tabs__header">С тренером</p>
                         <p class="tabs__tagline">72 занятия</p>
                         <p class="tabs__price-shadow">20000</p>
-                        <p class="tabs__price">20000 <span class="tabs__rub">₽</span></p>
+                        <p class="tabs__price">20000 <span class="tabs__rub"><svg class="tabs__rub-icon-big" width="30" height="42" aria-hidden="true" focusable="false">
+                          <use xlink:href="./img/sprite.svg#rub"></use>
+                        </svg>
+                        <svg class="tabs__rub-icon-small" width="24" height="33" aria-hidden="true" focusable="false">
+                          <use xlink:href="./img/sprite.svg#rub"></use>
+                        </svg></span></p>
                         <a href="#"  class="tabs__button">Купить абонемент</a>
                       </div>
                     </div>
@@ -323,7 +353,12 @@
                         <p class="tabs__header">Дневной</p>
                         <p class="tabs__tagline">с 8:00 до 17:00</p>
                         <p class="tabs__price-shadow">8000</p>
-                        <p class="tabs__price">8000 <span class="tabs__rub">₽</span></p>
+                        <p class="tabs__price">8000 <span class="tabs__rub"><svg class="tabs__rub-icon-big" width="30" height="42" aria-hidden="true" focusable="false">
+                          <use xlink:href="./img/sprite.svg#rub"></use>
+                        </svg>
+                        <svg class="tabs__rub-icon-small" width="24" height="33" aria-hidden="true" focusable="false">
+                          <use xlink:href="./img/sprite.svg#rub"></use>
+                        </svg></span></p>
                         <a href="#"  class="tabs__button">Купить абонемент</a>
                       </div>
                     </div>
@@ -332,7 +367,12 @@
                         <p class="tabs__header">Полный день</p>
                         <p class="tabs__tagline">с 8:00 до 22:00</p>
                         <p class="tabs__price-shadow">14000</p>
-                        <p class="tabs__price">14000 <span class="tabs__rub">₽</span></p>
+                        <p class="tabs__price">14000 <span class="tabs__rub"><svg class="tabs__rub-icon-big" width="30" height="42" aria-hidden="true" focusable="false">
+                          <use xlink:href="./img/sprite.svg#rub"></use>
+                        </svg>
+                        <svg class="tabs__rub-icon-small" width="24" height="33" aria-hidden="true" focusable="false">
+                          <use xlink:href="./img/sprite.svg#rub"></use>
+                        </svg></span></p>
                         <a href="#" class="tabs__button">Купить абонемент</a>
                       </div>
                     </div>
@@ -345,7 +385,12 @@
                         <p class="tabs__header">С тренером</p>
                         <p class="tabs__tagline">144 занятия</p>
                         <p class="tabs__price-shadow">35000</p>
-                        <p class="tabs__price">35000 <span class="tabs__rub">₽</span></p>
+                        <p class="tabs__price">35000 <span class="tabs__rub"><svg class="tabs__rub-icon-big" width="30" height="42" aria-hidden="true" focusable="false">
+                          <use xlink:href="./img/sprite.svg#rub"></use>
+                        </svg>
+                        <svg class="tabs__rub-icon-small" width="24" height="33" aria-hidden="true" focusable="false">
+                          <use xlink:href="./img/sprite.svg#rub"></use>
+                        </svg></span></p>
                         <a href="#" class="tabs__button">Купить абонемент</a>
                       </div>
                     </div>
@@ -354,7 +399,12 @@
                         <p class="tabs__header">Дневной</p>
                         <p class="tabs__tagline">с 8:00 до 17:00</p>
                         <p class="tabs__price-shadow">14000</p>
-                        <p class="tabs__price">14000 <span class="tabs__rub">₽</span></p>
+                        <p class="tabs__price">14000 <span class="tabs__rub"><svg class="tabs__rub-icon-big" width="30" height="42" aria-hidden="true" focusable="false">
+                          <use xlink:href="./img/sprite.svg#rub"></use>
+                        </svg>
+                        <svg class="tabs__rub-icon-small" width="24" height="33" aria-hidden="true" focusable="false">
+                          <use xlink:href="./img/sprite.svg#rub"></use>
+                        </svg></span></p>
                         <a href="#" class="tabs__button">Купить абонемент</a>
                       </div>
                     </div>
@@ -363,7 +413,12 @@
                         <p class="tabs__header">Полный день</p>
                         <p class="tabs__tagline">с 8:00 до 22:00</p>
                         <p class="tabs__price-shadow">25000</p>
-                        <p class="tabs__price">25000 <span class="tabs__rub">₽</span></p>
+                        <p class="tabs__price">25000 <span class="tabs__rub"><svg class="tabs__rub-icon-big" width="30" height="42" aria-hidden="true" focusable="false">
+                          <use xlink:href="./img/sprite.svg#rub"></use>
+                        </svg>
+                        <svg class="tabs__rub-icon-small" width="24" height="33" aria-hidden="true" focusable="false">
+                          <use xlink:href="./img/sprite.svg#rub"></use>
+                        </svg></span></p>
                         <a href="#" class="tabs__button">Купить абонемент</a>
                       </div>
                     </div>

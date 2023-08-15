@@ -1,17 +1,17 @@
 .tabs__controls {
   display: flex;
   justify-content: center;
-  max-width: 350px;
+  max-width: fit-content;
   margin: 0 auto;
   width: 100%;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
   background: none;
   border: none;
-  border-bottom: solid 2px rgba(120, 120, 120, 0.2);
   flex-wrap: wrap;
 
   @include vp-1200 {
     padding: 0 10px;
+    margin-bottom: 45px;
   }
 
   @include vp-768 {
@@ -32,16 +32,21 @@
   padding: 0;
   opacity: 0.5;
   color: $color-default-blue;
+  padding: 0 23px;
   padding-bottom: 11px;
+  border-bottom: solid 2px rgba(120, 120, 120, 0.2);
 
   @include vp-1366 {
     font-size: 18px;
     line-height: 27px;
+    padding: 0 27px;
+    padding-bottom: 11px;
   }
 
   @include vp-768 {
     font-size: 16px;
     line-height: 24px;
+    padding: 0 23px;
     padding-bottom: 12px;
   }
 
@@ -50,20 +55,22 @@
     pointer-events: none;
     padding-bottom: 11px;
     border-bottom: solid 2px $color-venetian-red;
-    margin-bottom: -2px;
   }
 
   &:hover,
   &:focus-visible {
     opacity: 1;
     border-bottom: solid 2px $color-venetian-red;
-    margin-bottom: -2px;
     outline: none;
   }
 }
 
-.tabs__control:not(:last-child) {
-  margin-right: 46px;
+.tabs__control:first-child {
+  padding-left: 0;
+}
+
+.tabs__control:last-child {
+  padding-right: 0;
 }
 
 .tabs__content {
@@ -100,6 +107,10 @@
     justify-content: space-between;
     align-items: center;
   }
+
+  @include vp-768 {
+    row-gap: 35px;
+  }
 }
 
 .tabs__card {
@@ -128,12 +139,13 @@
   justify-content: flex-start;
   align-items: center;
   box-sizing: border-box;
-  padding: 55px 70px 62px;
+  padding: 55px 70px 61px;
   background-color: $color-default-white;
 
   @include vp-1366 {
     width: 100%;
     max-width: 442px;
+    padding: 50px 70px 61px;
   }
 
   @include vp-768 {
@@ -142,17 +154,17 @@
   }
 }
 
-.tabs__card:not(:last-child) {
+/* .tabs__card:not(:last-child) {
   margin: 0;
 
   @include vp-1200 {
-    margin-bottom: 35px;
+    margin-bottom: 0;
   }
 
   @include vp-768 {
-    margin-bottom: 35px;
+    //margin-bottom: 35px;
   }
-}
+} */
 
 .tabs__header {
   font-family: $ff-secondary;
@@ -211,7 +223,7 @@
   font-weight: 700;
   line-height: 90px;
   margin-top: -33px;
-  margin-bottom: 35px;
+  margin-bottom: 36px;
 
 
   @include vp-1366 {
@@ -230,6 +242,35 @@
   color: $color-sapphire-blue;
 }
 
+.tabs__rub-icon {
+  width: 30px;
+  height: 42px;
+
+  @include vp-1200 {
+    width: 30px;
+    height: 42px;
+  }
+
+  @include vp-768 {
+    width: 24px;
+    height: 33px;
+  }
+}
+
+.tabs__rub-icon-small {
+  display: none;
+
+  @include vp-768 {
+    display: inline;
+  }
+}
+
+.tabs__rub-icon-big {
+  @include vp-768 {
+    display: none;
+  }
+}
+
 .tabs__button {
   background: none;
   font-family: $ff-secondary;
@@ -238,14 +279,14 @@
   letter-spacing: 0.6px;
   font-weight: 700;
   line-height: normal;
-  padding: 24px 42px;
+  padding: 22px 42px;
   border: solid 2px $color-default-white;
   outline: solid 2px $color-default-blue;
   cursor: pointer;
   text-align: center;
 
   @include vp-768 {
-    padding: 24px;
+    padding: 22px;
     width: 100%;
   }
 }

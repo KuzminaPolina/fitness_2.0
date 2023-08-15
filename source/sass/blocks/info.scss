@@ -160,16 +160,19 @@
 }
 
 .info__form-submit:hover {
-  opacity: 0.5;
+  background-color: $color-default-white;
+  color: $color-egyptian-blue;
 }
 
 .info__form-submit:active {
-  opacity: 1;
+  background-color: $color-default-white;
+  color: $color-default-blue;
 }
 
 .info__form-submit:focus-visible {
-  outline: solid 1px $color-default-white;
-  outline-offset: 2 px;
+  outline: none;
+  background-color: $color-default-white;
+  color: $color-egyptian-blue;
 }
 
 .info__input:not(:last-child) {

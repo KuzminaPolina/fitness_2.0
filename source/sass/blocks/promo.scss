@@ -130,9 +130,9 @@
   font-weight: 400;
   line-height: normal;
   margin-top: 0;
+  margin-bottom: 70px;
 
   @include vp-1200 {
-    //margin-bottom: 55px;
     margin-bottom: auto;
   }
 
@@ -197,7 +197,8 @@
   width: 50%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
+  row-gap: 40px;
 
   @include vp-1200 {
     width: 100%;
@@ -241,7 +242,6 @@
   background: $gradient-text-crimson-red-to-cobalt;
   padding: 7px;
   min-width: 100%;
-  height: 46%;
 
   @include vp-1200 {
     min-width: 324px;
@@ -259,7 +259,6 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  overflow: auto;
 
   @include vp-1200 {
     height: 100%;
