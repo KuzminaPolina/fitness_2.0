@@ -2314,7 +2314,7 @@ html {
   max-width: 1366px;
   margin: 0 auto;
   margin-top: -52px;
-  padding: 0 18px 50px 18px;
+  padding: 0 18px 49px 18px;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
@@ -2677,7 +2677,7 @@ html {
 
 .catalog {
   background: #f8f9fc;
-  padding: 140px 0 120px;
+  padding: 140px 0 122px;
   position: relative;
   scroll-behavior: smooth;
 }
@@ -2779,13 +2779,14 @@ html {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  max-width: 350px;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
   margin: 0 auto;
   width: 100%;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
   background: none;
   border: none;
-  border-bottom: solid 2px rgba(120, 120, 120, 0.2);
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
@@ -2800,7 +2801,9 @@ html {
   padding: 0;
   opacity: 0.5;
   color: #102654;
+  padding: 0 23px;
   padding-bottom: 11px;
+  border-bottom: solid 2px rgba(120, 120, 120, 0.2);
 }
 
 .tabs__control.is-active {
@@ -2808,19 +2811,21 @@ html {
   pointer-events: none;
   padding-bottom: 11px;
   border-bottom: solid 2px #d10a42;
-  margin-bottom: -2px;
 }
 
 .tabs__control:hover,
 .tabs__control:focus-visible {
   opacity: 1;
   border-bottom: solid 2px #d10a42;
-  margin-bottom: -2px;
   outline: none;
 }
 
-.tabs__control:not(:last-child) {
-  margin-right: 46px;
+.tabs__control:first-child {
+  padding-left: 0;
+}
+
+.tabs__control:last-child {
+  padding-right: 0;
 }
 
 .tabs__content {
@@ -2887,13 +2892,21 @@ html {
   align-items: center;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 55px 70px 62px;
+  padding: 55px 70px 61px;
   background-color: #ffffff;
 }
 
-.tabs__card:not(:last-child) {
+/* .tabs__card:not(:last-child) {
   margin: 0;
-}
+
+  @include vp-1200 {
+    margin-bottom: 0;
+  }
+
+  @include vp-768 {
+    //margin-bottom: 35px;
+  }
+} */
 
 .tabs__header {
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -2932,12 +2945,21 @@ html {
   font-weight: 700;
   line-height: 90px;
   margin-top: -33px;
-  margin-bottom: 35px;
+  margin-bottom: 36px;
 }
 
 .tabs__rub {
   font-family: "Rouble", "Arial", sans-serif;
   color: #102654;
+}
+
+.tabs__rub-icon {
+  width: 30px;
+  height: 42px;
+}
+
+.tabs__rub-icon-small {
+  display: none;
 }
 
 .tabs__button {
@@ -2948,7 +2970,7 @@ html {
   letter-spacing: 0.6px;
   font-weight: 700;
   line-height: normal;
-  padding: 24px 42px;
+  padding: 22px 42px;
   border: solid 2px #ffffff;
   outline: solid 2px #102654;
   cursor: pointer;
@@ -2995,7 +3017,7 @@ html {
 
 .super-games__info {
   background-color: #ed0233;
-  padding: 85px 79px 86px;
+  padding: 85px 79px 87px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3814,6 +3836,7 @@ html {
   font-weight: 400;
   line-height: normal;
   margin-top: 0;
+  margin-bottom: 70px;
 }
 
 .promo__img picture img {
@@ -3853,9 +3876,10 @@ html {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  row-gap: 40px;
 }
 
 .promo__text {
@@ -3878,7 +3902,6 @@ html {
   background: linear-gradient(129deg, #d10a42 0%, #0041ca 100%);
   padding: 7px;
   min-width: 100%;
-  height: 46%;
 }
 
 .promo__content {
@@ -3892,7 +3915,6 @@ html {
   -ms-flex-direction: column;
   flex-direction: column;
   height: 100%;
-  overflow: auto;
 }
 
 .promo__secondary-link {
@@ -4384,16 +4406,19 @@ html {
 }
 
 .info__form-submit:hover {
-  opacity: 0.5;
+  background-color: #ffffff;
+  color: #103aae;
 }
 
 .info__form-submit:active {
-  opacity: 1;
+  background-color: #ffffff;
+  color: #102654;
 }
 
 .info__form-submit:focus-visible {
-  outline: solid 1px #ffffff;
-  outline-offset: 2 px;
+  outline: none;
+  background-color: #ffffff;
+  color: #103aae;
 }
 
 .info__input:not(:last-child) {
@@ -4481,9 +4506,9 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -4564,14 +4589,15 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  row-gap: 20px;
   margin: 0;
   padding: 0;
   padding-right: 1px;
@@ -4736,11 +4762,14 @@ html {
   .tabs__control {
     font-size: 18px;
     line-height: 27px;
+    padding: 0 27px;
+    padding-bottom: 11px;
   }
 
   .tabs__card-content {
     width: 100%;
     max-width: 442px;
+    padding: 50px 70px 61px;
   }
 
   .tabs__header {
@@ -4915,7 +4944,7 @@ html {
   }
 
   .catalog {
-    padding: 115px 45px 98px;
+    padding: 115px 45px 101px;
   }
 
   .catalog__decoration {
@@ -4932,6 +4961,7 @@ html {
 
   .tabs__controls {
     padding: 0 10px;
+    margin-bottom: 45px;
   }
 
   .tabs__cards {
@@ -4951,8 +4981,9 @@ html {
     width: 442px;
   }
 
-  .tabs__card:not(:last-child) {
-    margin-bottom: 35px;
+  .tabs__rub-icon {
+    width: 30px;
+    height: 42px;
   }
 
   .super-games__container {
@@ -5474,7 +5505,7 @@ html {
   }
 
   .footer__nav {
-    padding: 40px 0;
+    padding: 40px 0 44px;
   }
 
   .footer__list {
@@ -5658,7 +5689,12 @@ html {
   .tabs__control {
     font-size: 16px;
     line-height: 24px;
+    padding: 0 23px;
     padding-bottom: 12px;
+  }
+
+  .tabs__cards {
+    row-gap: 35px;
   }
 
   .tabs__card {
@@ -5668,10 +5704,6 @@ html {
   .tabs__card-content {
     padding: 44px 35px 48px;
     margin: 0 auto;
-  }
-
-  .tabs__card:not(:last-child) {
-    margin-bottom: 35px;
   }
 
   .tabs__header {
@@ -5695,8 +5727,21 @@ html {
     margin-bottom: 23px;
   }
 
+  .tabs__rub-icon {
+    width: 24px;
+    height: 33px;
+  }
+
+  .tabs__rub-icon-small {
+    display: inline;
+  }
+
+  .tabs__rub-icon-big {
+    display: none;
+  }
+
   .tabs__button {
-    padding: 24px;
+    padding: 22px;
     width: 100%;
   }
 
@@ -5724,12 +5769,13 @@ html {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 
   .super-games__tagline {
     margin-bottom: 30px;
-    -ms-flex-item-align: start;
-    align-self: flex-start;
   }
 
   .advantages__header {
@@ -6326,7 +6372,7 @@ html {
     -ms-flex-align: start;
     align-items: flex-start;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 52px;
     position: relative;
   }
 
