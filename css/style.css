@@ -2677,7 +2677,7 @@ html {
 
 .catalog {
   background: #f8f9fc;
-  padding: 140px 0 122px;
+  padding: 140px 0 120px;
   position: relative;
   scroll-behavior: smooth;
 }
@@ -2892,21 +2892,9 @@ html {
   align-items: center;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 55px 70px 61px;
+  padding: 55px 70px 64px;
   background-color: #ffffff;
 }
-
-/* .tabs__card:not(:last-child) {
-  margin: 0;
-
-  @include vp-1200 {
-    margin-bottom: 0;
-  }
-
-  @include vp-768 {
-    //margin-bottom: 35px;
-  }
-} */
 
 .tabs__header {
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -2946,16 +2934,6 @@ html {
   line-height: 90px;
   margin-top: -33px;
   margin-bottom: 36px;
-}
-
-.tabs__rub {
-  font-family: "Rouble", "Arial", sans-serif;
-  color: #102654;
-}
-
-.tabs__rub-icon {
-  width: 30px;
-  height: 42px;
 }
 
 .tabs__rub-icon-small {
@@ -4518,6 +4496,7 @@ html {
   padding-left: 9px;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  max-width: 630px;
 }
 
 .footer__logo-link {
@@ -4602,6 +4581,7 @@ html {
   padding: 0;
   padding-right: 1px;
   margin-top: -11px;
+  width: 98px;
 }
 
 .footer__social-item {
@@ -4769,7 +4749,7 @@ html {
   .tabs__card-content {
     width: 100%;
     max-width: 442px;
-    padding: 50px 70px 61px;
+    padding: 50px 70px 62px;
   }
 
   .tabs__header {
@@ -4979,11 +4959,6 @@ html {
 
   .tabs__card {
     width: 442px;
-  }
-
-  .tabs__rub-icon {
-    width: 30px;
-    height: 42px;
   }
 
   .super-games__container {
@@ -5702,7 +5677,7 @@ html {
   }
 
   .tabs__card-content {
-    padding: 44px 35px 48px;
+    padding: 44px 35px 49px;
     margin: 0 auto;
   }
 
@@ -5725,11 +5700,6 @@ html {
     margin-top: -85px;
     font-size: 48px;
     margin-bottom: 23px;
-  }
-
-  .tabs__rub-icon {
-    width: 24px;
-    height: 33px;
   }
 
   .tabs__rub-icon-small {
@@ -5995,15 +5965,7 @@ html {
   .trainers__overlay {
     width: 100%;
     height: 100%;
-    padding: 35px 25px;
-  }
-
-  .trainers__overlay-name {
-    width: 78%;
-  }
-
-  .trainers__overlay-item:not(:last-child) {
-    margin-bottom: 5px;
+    padding: 42px 25px;
   }
 
   .trainers__button {
