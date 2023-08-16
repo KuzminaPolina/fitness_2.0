@@ -36,6 +36,7 @@
   padding: 0;
   padding-left: 9px;
   flex-wrap: wrap;
+  max-width: 630px;
 
   @include vp-1200 {
     gap: 0;
@@ -175,6 +176,7 @@
   padding: 0;
   padding-right: 1px;
   margin-top: -11px;
+  width: 98px;
 
   @include vp-1200 {
     margin: 0;

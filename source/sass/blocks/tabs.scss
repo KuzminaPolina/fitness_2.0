@@ -139,32 +139,20 @@
   justify-content: flex-start;
   align-items: center;
   box-sizing: border-box;
-  padding: 55px 70px 61px;
+  padding: 55px 70px 64px;
   background-color: $color-default-white;
 
   @include vp-1366 {
     width: 100%;
     max-width: 442px;
-    padding: 50px 70px 61px;
+    padding: 50px 70px 62px;
   }
 
   @include vp-768 {
-    padding: 44px 35px 48px;
+    padding: 44px 35px 49px;
     margin: 0 auto;
   }
 }
-
-/* .tabs__card:not(:last-child) {
-  margin: 0;
-
-  @include vp-1200 {
-    margin-bottom: 0;
-  }
-
-  @include vp-768 {
-    //margin-bottom: 35px;
-  }
-} */
 
 .tabs__header {
   font-family: $ff-secondary;
@@ -234,26 +222,6 @@
     margin-top: -85px;
     font-size: 48px;
     margin-bottom: 23px;
-  }
-}
-
-.tabs__rub {
-  font-family: $ff-rouble;
-  color: $color-sapphire-blue;
-}
-
-.tabs__rub-icon {
-  width: 30px;
-  height: 42px;
-
-  @include vp-1200 {
-    width: 30px;
-    height: 42px;
-  }
-
-  @include vp-768 {
-    width: 24px;
-    height: 33px;
   }
 }
 
